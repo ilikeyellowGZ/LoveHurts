@@ -1,0 +1,9 @@
+.mobile-downloads_container .mobile-nav-view_google-play img,
+.mobile-downloads_container .mobile-nav-view_itch img {
+  scale: 0.5;
+  /* will style later just need to get the whole website layout in check first */
+}
+
+.gameLogo img {
+  scale: 1.3;
+}
