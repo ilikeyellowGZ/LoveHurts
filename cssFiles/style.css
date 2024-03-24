@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Pixelify+Sans:wght@650&display=swap");
+
+:root {
+  --red: #d90000;
+  --green: #02dd00;
+  --dark-blue: #419fd6;
+  --blue: #48ace2;
+  --light-blue: #9acfe9;
+  --light-gray: #dfeeef;
+  --grey: #d0e5ec;
+  --dark-gray: #c6e0ed;
+  --light-page-color: #fbfbf2;
+  --general-font: "GFS Neohellenic", sans-serif;
+  --heading-font: "Pixelify Sans", sans-serif;
+  --itch-color: #fe5d5b;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-family: var(--general-font);
+  overflow-x: hidden;
+}

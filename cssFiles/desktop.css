@@ -1,0 +1,484 @@
+header * {
+  z-index: 2;
+}
+
+header {
+  height: 100dvh;
+
+  position: relative;
+  padding: 32px 24px;
+  overflow-x: hidden;
+}
+header .background-video_header {
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  inset: 0;
+  z-index: 1;
+  filter: blur(15px);
+}
+
+.background-video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  inset: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.685);
+}
+.mobile-nav_view {
+  display: none;
+}
+.non-mobile-links_and-hamburger #hamburger svg,
+.mobile-nav_view #closingBtn svg {
+  display: none;
+}
+.non-mobile-links_and-hamburger {
+  width: 100%;
+}
+.non-mobile-links_and-hamburger ul {
+  display: flex;
+  width: 100%;
+  margin: auto 0;
+  padding-right: 24px;
+  justify-content: end;
+}
+.non-mobile-links_and-hamburger ul li {
+  list-style: none;
+  margin-left: 30px;
+  padding: 8px;
+}
+
+.non-mobile-links_and-hamburger ul li a {
+  font-size: 20px;
+  color: var(--light-page-color);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 2;
+}
+
+.gameLogo {
+  background: url(/media/Love_Hurts_Title.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 55%;
+  left: 50%;
+  top: 14%;
+  height: 40%;
+  transform: translate(-50%);
+  position: absolute;
+  z-index: 10;
+}
+
+header .btn_container {
+  background: transparent;
+  height: 35%;
+  display: grid;
+  grid-template-rows: 40% 40% 20%;
+  justify-content: right;
+  position: relative;
+  row-gap: 24px;
+  bottom: -50%;
+}
+
+.btn_container .itch-io {
+  padding: 1px 3px;
+}
+.btn_container .itch-io img {
+  border-radius: 10px;
+}
+.btn_container .itch-io,
+.btn_container .google-play,
+.btn_container .discord {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn_container .discord {
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid red;
+  overflow: hidden;
+  color: red;
+  border-radius: 10px;
+}
+.btn_container .discord h1 {
+  transition: 0.3s;
+}
+.btn_container .discord:hover > h1 {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.divider {
+  background: rgba(0, 0, 0, 0.685);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--light-page-color);
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4vh;
+}
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+/* -------------------------#the_creation ---------- */
+
+#the_creation {
+  background: var(--dark-gray);
+  display: flex;
+  position: relative;
+  justify-content: left;
+  align-items: center;
+  padding: 36px;
+}
+#the_creation .text_container {
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 3px 3px 10px black, inset 3px 3px 10px black;
+  background: rgba(255, 255, 255, 0.219);
+  max-width: 600px;
+  aspect-ratio: 2/1;
+  display: flex;
+  color: #191919;
+  position: relative;
+  z-index: 5;
+}
+.text_container h1 {
+  font-family: var(--heading-font);
+  text-align: left;
+  font-size: 60px;
+  margin: 12px 0;
+}
+
+.text_container p {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 23px;
+}
+#the_creation .assests {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.assests {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  inset: 0;
+}
+
+#the_creation .assests .objects {
+  width: 120px;
+  aspect-ratio: 1;
+}
+#the_creation .assests .objects img {
+  width: 100%;
+  aspect-ratio: 0.845/ 1;
+  transform: scaleX(-1);
+}
+.assests .objects:first-child {
+  right: 200px;
+  bottom: 25%;
+  position: absolute;
+}
+
+.assests .objects:nth-child(2) {
+  right: 50%;
+  bottom: 90px;
+  position: absolute;
+}
+.assests .objects:nth-child(3) {
+  right: 10%;
+  top: 190px;
+  position: absolute;
+}
+.assests .objects:nth-child(3) img {
+  aspect-ratio: 0.895/ 1 !important;
+}
+.assests .objects:last-child {
+  left: 40%;
+  top: 100px;
+  position: absolute;
+}
+.assests .objects:last-child img {
+  aspect-ratio: 0.944/ 1 !important;
+}
+/* -------------------------#storyLine---------- */
+
+#game-story {
+  background: var(--light-blue);
+  position: relative;
+  padding: 36px 48px;
+  display: grid;
+  grid-template-rows: 40% 20% 40%;
+}
+#game-story .text-container {
+  background: rgba(202, 185, 185, 0.377);
+  padding: 0 12px;
+  width: fit-content;
+  max-width: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+}
+#game-story .text-container .text-wrapper {
+  place-content: center;
+}
+#game-story .img-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#game-story .text-container h1 {
+  font-family: var(--heading-font);
+  margin: 12px 0;
+  font-size: 28px;
+  text-align: center;
+}
+#game-story .text-container p {
+  line-height: 1.5;
+  text-align: justify;
+}
+#game-story img {
+  height: 100%;
+  border-radius: 12px;
+  aspect-ratio: 16/9;
+}
+
+/* -------------------------#storyLine---------- */
+#storyLine {
+  background: var(--blue);
+  position: relative;
+  padding: 24px 12px;
+  display: flex;
+  place-items: center;
+}
+#storyLine .text-container {
+  background: silver;
+  padding: 12px;
+  margin: 24px auto;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  aspect-ratio: 2.5/1;
+}
+#storyLine .text-container .text-wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  padding: 24px;
+}
+#storyLine .text-container h1 {
+  font-family: var(--heading-font);
+  font-size: 60px;
+  align-items: end;
+  justify-content: center;
+  display: flex;
+}
+#storyLine .text-container p {
+  line-height: 1.5;
+  display: flex;
+  text-align: center;
+  font-size: 23px;
+}
+
+#storyLine .assets {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  pointer-events: none;
+}
+#storyLine .assets .objects {
+  height: 120px;
+  aspect-ratio: 1;
+  position: absolute;
+}
+#storyLine .assets .objects img {
+  scale: 2.3;
+  position: absolute;
+  left: 70%;
+  top: 30%;
+  transform: translateX(-50%);
+}
+#storyLine .assets .objects:first-child {
+  left: 30%;
+  top: 12%;
+}
+#storyLine .assets .objects:nth-child(2) {
+  left: 12%;
+  top: 45%;
+}
+#storyLine .assets .objects:nth-child(3) {
+  right: 12%;
+  top: 45%;
+}
+#storyLine .assets .objects:nth-child(4) {
+  left: 20%;
+  top: 74%;
+}
+#storyLine .assets .objects:nth-child(5) {
+  left: 47%;
+  top: 77%;
+}
+#storyLine .assets .objects:nth-child(6) {
+  right: 20%;
+  top: 75%;
+}
+#storyLine .assets .objects:nth-child(7) {
+  right: 30%;
+  top: 12%;
+}
+#storyLine .assets .objects:nth-child(8) {
+  left: 10%;
+  top: 18%;
+}
+#storyLine .assets .objects:nth-child(9) {
+  right: 10%;
+  top: 18%;
+}
+/* -------------footer */
+
+footer {
+  background: var(--dark-blue);
+  height: 100vh;
+  padding: 32px 36px;
+  position: relative;
+  display: none;
+  grid-template-columns: 50% 50%;
+}
+footer form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+footer .form-container {
+  align-items: flex-end;
+  height: 50%;
+  display: flex;
+  padding: 24px 0;
+}
+footer form input {
+  border: none;
+  border-bottom: 3px solid var(--light-page-color);
+  background: transparent;
+  padding: 12px 12px 0;
+  outline: none;
+  text-align: center;
+  color: var(--light-page-color);
+  width: 48%;
+  height: 50px;
+  margin: 0 0.5%;
+  font-size: 20px;
+}
+footer form input::placeholder {
+  color: var(--light-page-color);
+  font-size: 20px;
+}
+
+footer form button {
+  background: var(--red);
+  width: 100%;
+  height: 60px;
+  margin-top: 24px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+footer .form_logo-container {
+  padding: 40px;
+}
+.loveHurts-logo_img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: 50%;
+}
+
+.loveHurts-logo_img img {
+  scale: 1.2;
+  transform: translateX(30px);
+}
+
+footer .bottom-links-and_downloads {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.bottom-links-and_downloads .links {
+  place-content: center;
+}
+.bottom-links-and_downloads .links ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /*   margin-left: ;
+ */
+}
+.bottom-links-and_downloads .links ul li a {
+  padding: 12px;
+  text-decoration: none;
+  color: var(--light-page-color);
+  font-size: 19px;
+}
+
+.bottom-links-and_downloads .download_buttons img {
+  scale: 0.8;
+}
+.bottom-links-and_downloads .download_buttons .google_play {
+  position: relative;
+}
+
+.bottom-links-and_downloads .download_buttons .itch_io {
+  position: relative;
+  background: ;
+}
+.itch_io img {
+  border-radius: 12px;
+  position: absolute;
+  inset: 0;
+}
+.google_play img {
+  inset: 0;
+}

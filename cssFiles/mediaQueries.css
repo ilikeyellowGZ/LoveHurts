@@ -1,0 +1,340 @@
+.mobile-downloads_container .mobile-nav-view_google-play img,
+.mobile-downloads_container .mobile-nav-view_itch img {
+  scale: 0.5;
+  /* will style later just need to get the whole website layout in check first */
+}
+
+@media screen and (max-width: 600px) {
+}
+@media (min-width: 601px) and (max-width: 749px) {
+  #the_creation .text_container {
+    margin: auto;
+  }
+  .text_container h1 {
+    font-size: 50px;
+  }
+  .text_container p {
+    font-size: 18px;
+  }
+  .assests .objects:first-child {
+    right: 25%;
+    bottom: 8%;
+  }
+  .assests .objects:nth-child(2) {
+    right: 60%;
+    bottom: 8%;
+  }
+  .assests .objects:nth-child(3) {
+    right: 20%;
+    top: 12%;
+  }
+  .assests .objects:last-child {
+    left: 20%;
+    top: 12%;
+  }
+  .assests .objects img {
+    scale: 0.8;
+  }
+  .assests .objects:nth-child(3) img {
+    transform: scaleX(1) !important;
+  }
+  .assests .objects:first-child img {
+    transform: scaleX(1) !important;
+  }
+  #game-story img {
+    height: 90% !important;
+  }
+  #game-story {
+    padding: 36px 20px;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+  #game-story img {
+    height: 40% !important;
+  }
+  #game-story .img-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  #game-story .text-container {
+    align-items: end;
+  }
+  .gameLogo {
+    width: 60.5%;
+    height: 44%;
+  }
+  header .btn_container {
+    row-gap: 20px;
+    justify-content: center;
+  }
+  .btn_container .itch-io,
+  .btn_container .google-play,
+  .btn_container .discord {
+    scale: 0.9;
+  }
+  #storyLine .text-container {
+    padding: 0px;
+  }
+  #storyLine .text-container .text-wrapper {
+    padding: 0;
+  }
+  #storyLine .text-container h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  #storyLine .text-container p {
+    font-size: 16px;
+  }
+  #storyLine .assets .objects img {
+    scale: 1.5;
+  }
+  #storyLine .assets .objects:nth-child(2) {
+    left: 4%;
+  }
+  #storyLine .assets .objects:nth-child(3) {
+    right: 4%;
+  }
+  #storyLine .assets .objects:nth-child(4) {
+    left: 13%;
+  }
+  #storyLine .assets .objects:nth-child(5) {
+    left: 42%;
+  }
+  #storyLine .assets .objects:nth-child(6) {
+    right: 13%;
+  }
+}
+@media (min-width: 750px) and (max-width: 900px) {
+  #the_creation .text_container {
+    margin: auto;
+  }
+  .text_container h1 {
+    font-size: 50px;
+  }
+  .text_container p {
+    font-size: 18px;
+  }
+  .assests .objects:first-child {
+    right: 25%;
+    bottom: 8%;
+  }
+  .assests .objects:nth-child(2) {
+    right: 60%;
+    bottom: 8%;
+  }
+  .assests .objects:nth-child(3) {
+    right: 20%;
+    top: 12%;
+  }
+  .assests .objects:last-child {
+    left: 20%;
+    top: 12%;
+  }
+  .assests .objects:nth-child(3) img {
+    transform: scaleX(1) !important;
+  }
+  .assests .objects:first-child img {
+    transform: scaleX(1) !important;
+  }
+  #game-story {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+  #game-story img {
+    height: 40% !important;
+  }
+  #game-story .img-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  #game-story .text-container {
+    align-items: end;
+    padding: 12px;
+  }
+  .gameLogo {
+    width: 60.5%;
+    height: 44%;
+  }
+  header .btn_container {
+    row-gap: 16px;
+    justify-content: center;
+  }
+  .btn_container .itch-io,
+  .btn_container .google-play,
+  .btn_container .discord {
+    scale: 0.9;
+  }
+  #storyLine .text-container {
+    padding: 0px;
+  }
+  #storyLine .text-container .text-wrapper {
+    padding: 0;
+  }
+  #storyLine .text-container h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+  #storyLine .text-container p {
+    font-size: 18px;
+  }
+  #storyLine .assets .objects img {
+    scale: 1.5;
+  }
+  #storyLine .assets .objects:nth-child(2) {
+    left: 4%;
+  }
+  #storyLine .assets .objects:nth-child(3) {
+    right: 4%;
+  }
+  #storyLine .assets .objects:nth-child(4) {
+    left: 13%;
+  }
+  #storyLine .assets .objects:nth-child(5) {
+    left: 42%;
+  }
+  #storyLine .assets .objects:nth-child(6) {
+    right: 13%;
+  }
+}
+@media (min-width: 901px) and (max-width: 1049px) {
+  .assests .objects:first-child {
+    right: 12%;
+  }
+  .assests .objects:nth-child(2) {
+    right: 50%;
+  }
+  .assests .objects:nth-child(3) {
+    right: 10%;
+  }
+  .assests .objects:last-child {
+    left: 40%;
+  }
+  #game-story img {
+    height: 70% !important;
+  }
+  .gameLogo {
+    width: 60.5%;
+    height: 44%;
+  }
+  header .btn_container {
+    row-gap: 12px;
+    justify-content: center;
+  }
+  .btn_container .itch-io,
+  .btn_container .google-play,
+  .btn_container .discord {
+    scale: 0.9;
+  }
+  #storyLine .text-container {
+    padding: 0px;
+  }
+  #storyLine .text-container .text-wrapper {
+    padding: 0;
+  }
+  #storyLine .text-container h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+  #storyLine .text-container p {
+    font-size: 20px;
+  }
+  #storyLine .assets .objects img {
+    scale: 1.5;
+  }
+}
+@media (min-width: 1050px) and (max-width: 1199px) {
+  #the_creation .assests .objects {
+    transform: translateX(50%);
+  }
+  #game-story img {
+    height: 75% !important;
+  }
+  header .btn_container {
+    row-gap: 16px;
+  }
+  .btn_container .itch-io,
+  .btn_container .google-play,
+  .btn_container .discord {
+    scale: 0.8;
+  }
+  #storyLine .text-container {
+    padding: 0px;
+  }
+  #storyLine .text-container .text-wrapper {
+    padding: 0;
+  }
+  #storyLine .text-container h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1199px) {
+  #game-story img {
+    height: 80% !important;
+  }
+  header .btn_container {
+    row-gap: 16px;
+  }
+  #storyLine .text-container {
+    padding: 0px;
+  }
+  #storyLine .text-container .text-wrapper {
+    padding: 0;
+  }
+  #storyLine .text-container h1 {
+    margin-bottom: 10px;
+  }
+  .btn_container .itch-io,
+  .btn_container .google-play,
+  .btn_container .discord {
+    scale: 0.8;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1349px) {
+  #game-story img {
+    height: 88% !important;
+  }
+  header .btn_container {
+    row-gap: 18px;
+  }
+  .btn_container .itch-io,
+  .btn_container .google-play,
+  .btn_container .discord {
+    scale: 0.9;
+  }
+  #storyLine .text-container .text-wrapper {
+    padding: 0;
+  }
+  #storyLine .text-container h1 {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1350px) and (max-width: 1499px) {
+  #game-story img {
+    height: 90% !important;
+  }
+  header .btn_container {
+    row-gap: 18px;
+  }
+  .btn_container .itch-io,
+  .btn_container .google-play,
+  .btn_container .discord {
+    scale: 0.9;
+  }
+  #storyLine .text-container .text-wrapper {
+    padding: 14px;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1649px) {
+}
+@media (min-width: 1650px) and (max-width: 1799px) {
+}
+@media (min-width: 1800px) and (max-width: 1950px) {
+}
+@media (min-width: 1951px) and (max-width: 2100px) {
+}
