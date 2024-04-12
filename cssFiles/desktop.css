@@ -168,6 +168,8 @@ section {
   color: #191919;
   position: relative;
   z-index: 5;
+  min-height: fit-content;
+  width: max-content;
 }
 .text_container h1 {
   font-family: var(--heading-font);
@@ -289,7 +291,6 @@ section {
   width: 50%;
   display: flex;
   align-items: center;
-  aspect-ratio: 2.5/1;
 }
 #storyLine .text-container .text-wrapper {
   height: 100%;
@@ -370,22 +371,33 @@ section {
 
 footer {
   background: var(--dark-blue);
-  height: 100vh;
-  padding: 32px 36px;
+  height: 80vh;
+  display: grid;
+  padding: 32px 48px;
   position: relative;
-  display: none;
-  grid-template-columns: 50% 50%;
+  max-width: 100vw;
+  grid-template-columns: 65% 35%;
+}
+footer .form_logo-container {
+  display: grid;
+  grid-template-rows: 40% 60%;
 }
 footer form {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
+  align-items: center;
 }
 footer .form-container {
-  align-items: flex-end;
-  height: 50%;
-  display: flex;
   padding: 24px 0;
+  background: pink;
+  display: grid;
+  position: relative;
+}
+footer .form-container p {
+  font-size: 23px;
+  line-height: 1.5;
+  text-align: left;
+  padding-bottom: 12px;
 }
 footer form input {
   border: none;
@@ -393,12 +405,15 @@ footer form input {
   background: transparent;
   padding: 12px 12px 0;
   outline: none;
-  text-align: center;
+  text-align: left;
   color: var(--light-page-color);
   width: 48%;
+  max-width: 370px;
   height: 50px;
   margin: 0 0.5%;
   font-size: 20px;
+  display: flex;
+  align-items: end;
 }
 footer form input::placeholder {
   color: var(--light-page-color);
@@ -407,9 +422,10 @@ footer form input::placeholder {
 
 footer form button {
   background: var(--red);
-  width: 100%;
+  width: 15%;
   height: 60px;
-  margin-top: 24px;
+  margin-top: 10px;
+  margin-left: 10px;
   border-radius: 12px;
   border: none;
   outline: none;
@@ -421,64 +437,66 @@ footer form button {
   font-size: 25px;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
+  flex-grow: 2;
+  max-width: 242px;
 }
-footer .form_logo-container {
-  padding: 40px;
-}
-.loveHurts-logo_img {
+footer .img_container {
+  position: relative;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+}
+
+footer .img_container img {
+  aspect-ratio: 2.66/1;
+  height: 200px;
+}
+
+footer .bottom-links-and_downloads .download_buttons img {
+  aspect-ratio: 3.32/1;
+  height: 100px;
+  position: absolute;
+}
+footer .bottom-links-and_downloads .download_buttons .itch_io img {
+  border-radius: 10px;
+}
+footer .bottom-links-and_downloads .download_buttons .google_play img {
+  margin-top: 70px;
+}
+footer .google_play,
+footer .itch_io {
   position: relative;
   height: 50%;
-}
-
-.loveHurts-logo_img img {
-  scale: 1.2;
-  transform: translateX(30px);
-}
-
-footer .bottom-links-and_downloads {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-.bottom-links-and_downloads .links {
-  place-content: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .bottom-links-and_downloads .links ul {
-  list-style: none;
-  height: 100%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /*   margin-left: ;
- */
+  list-style: none;
+}
+.bottom-links-and_downloads .links ul li {
+  text-align: end;
+  margin: 10px 0;
 }
 .bottom-links-and_downloads .links ul li a {
   padding: 12px;
   text-decoration: none;
   color: var(--light-page-color);
   font-size: 19px;
-}
-
-.bottom-links-and_downloads .download_buttons img {
-  scale: 0.8;
-}
-.bottom-links-and_downloads .download_buttons .google_play {
+  color: red;
   position: relative;
+  transition: 0.4s;
 }
-
-.bottom-links-and_downloads .download_buttons .itch_io {
-  position: relative;
-  background: ;
+.bottom-links-and_downloads .links ul li a:hover {
+  color: white;
+  font-size: 20px;
 }
-.itch_io img {
-  border-radius: 12px;
-  position: absolute;
-  inset: 0;
-}
-.google_play img {
-  inset: 0;
+footer .bottom-links-and_downloads {
+  display: grid;
+  grid-template-rows: 50% 50%;
 }

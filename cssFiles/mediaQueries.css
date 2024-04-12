@@ -3,10 +3,70 @@
   scale: 0.5;
   /* will style later just need to get the whole website layout in check first */
 }
-
-@media screen and (max-width: 600px) {
+@media (min-width: 350px) and (max-width: 399px) {
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 48px !important ;
+  }
 }
-@media (min-width: 601px) and (max-width: 749px) {
+@media (min-width: 400px) and (max-width: 449px) {
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 56px !important ;
+  }
+}
+@media (min-width: 450px) and (max-width: 499px) {
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 64px !important ;
+  }
+}
+@media (min-width: 500px) and (max-width: 549px) {
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 72px !important ;
+  }
+}
+@media (min-width: 550px) and (max-width: 600px) {
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 80px !important ;
+  }
+}
+@media (min-width: 601px) and (max-width: 649px) {
+}
+@media (min-width: 650px) and (max-width: 699px) {
+}
+@media (min-width: 700px) and (max-width: 749px) {
+}
+@media (min-width: 750px) and (max-width: 799px) {
+}
+@media (min-width: 800px) and (max-width: 849px) {
+}
+@media (min-width: 850px) and (max-width: 899px) {
+}
+@media (min-width: 900px) and (max-width: 949px) {
+}
+@media (min-width: 950px) and (max-width: 999px) {
+}
+@media (min-width: 1000px) and (max-width: 1049px) {
+}
+@media (min-width: 1050px) and (max-width: 1099px) {
+}
+@media (min-width: 1100px) and (max-width: 1149px) {
+}
+@media (min-width: 1150px) and (max-width: 1199px) {
+}
+@media (min-width: 1200px) and (max-width: 1249px) {
+}
+@media (min-width: 1250px) and (max-width: 1299px) {
+}
+@media (min-width: 1300px) and (max-width: 1349px) {
+}
+@media (min-width: 1350px) and (max-width: 1399px) {
+}
+@media (min-width: 1400px) and (max-width: 1449px) {
+}
+@media (min-width: 1450px) and (max-width: 1499px) {
+}
+@media (min-width: 1500px) and (max-width: 1549px) {
+}
+@media (min-width: 1550px) and (max-width: 1599px) {
   #the_creation .text_container {
     margin: auto;
   }
@@ -105,6 +165,72 @@
   #storyLine .assets .objects:nth-child(6) {
     right: 13%;
   }
+  footer {
+    grid-template-rows: 66% 1fr;
+    grid-template-columns: none;
+  }
+  footer form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    background: green;
+  }
+  footer form input {
+    text-align: center;
+  }
+  footer .bottom-links-and_downloads {
+    display: grid;
+    grid-template-rows: 65% 35%;
+  }
+  footer .bottom-links-and_downloads .download_buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 80px;
+  }
+  footer .google_play,
+  footer .itch_io {
+    justify-content: center;
+    height: 100%;
+  }
+  footer .bottom-links-and_downloads .download_buttons .google_play img {
+    margin-top: 0px;
+  }
+  .bottom-links-and_downloads .links ul {
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  footer .form_logo-container {
+    grid-template-columns: 100%;
+    display: block;
+    height: 100%;
+  }
+
+  footer .img_container {
+    display: none;
+  }
+  footer form input {
+    width: 100%;
+    max-width: none;
+  }
+  footer form button {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    margin-left: 0;
+    height: 60px;
+  }
+  footer .form-container p {
+    padding: 0;
+    text-align: center;
+  }
+  footer .form-container {
+    grid-template-rows: 30% 70%;
+    height: 100%;
+  }
 }
 @media (min-width: 750px) and (max-width: 900px) {
   #the_creation .text_container {
@@ -199,6 +325,75 @@
   #storyLine .assets .objects:nth-child(6) {
     right: 13%;
   }
+  footer {
+    grid-template-rows: 58% 1fr;
+    grid-template-columns: none;
+  }
+  footer form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: auto 0;
+  }
+  footer form input {
+    text-align: center;
+  }
+  footer .bottom-links-and_downloads {
+    display: grid;
+    grid-template-rows: 65% 35%;
+  }
+  footer .bottom-links-and_downloads .download_buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 95px;
+  }
+  footer .google_play,
+  footer .itch_io {
+    justify-content: center;
+    height: 100%;
+  }
+  footer .bottom-links-and_downloads .download_buttons .google_play img {
+    margin-top: 0px;
+  }
+  .bottom-links-and_downloads .links ul {
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  footer .form_logo-container {
+    grid-template-columns: 100%;
+    display: block;
+    height: 100%;
+  }
+  footer .form-container {
+    padding: 24px 0;
+    background: pink;
+    display: grid;
+    height: 100%;
+  }
+  footer .img_container {
+    display: none;
+  }
+  footer form input {
+    width: 49%;
+    height: fit-content;
+  }
+  footer form button {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  footer .form-container p {
+    padding: 0;
+  }
+  footer .form-container {
+    grid-template-rows: 50% 50%;
+  }
 }
 @media (min-width: 901px) and (max-width: 1049px) {
   .assests .objects:first-child {
@@ -245,6 +440,30 @@
   #storyLine .assets .objects img {
     scale: 1.5;
   }
+  footer {
+    grid-template-columns: 60% 1fr;
+  }
+  footer form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  footer form input {
+    width: 49%;
+    height: fit-content;
+  }
+  footer form button {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  footer .form-container p {
+    padding: 0;
+  }
+  footer .form-container {
+    grid-template-rows: 50% 50%;
+  }
 }
 @media (min-width: 1050px) and (max-width: 1199px) {
   #the_creation .assests .objects {
@@ -271,6 +490,24 @@
     margin-bottom: 10px;
     font-size: 50px;
   }
+  footer {
+    grid-template-columns: 65% 1fr;
+  }
+  footer form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  footer form input {
+    width: 49%;
+    height: fit-content;
+  }
+  footer form button {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 1050px) and (max-width: 1199px) {
@@ -293,6 +530,24 @@
   .btn_container .google-play,
   .btn_container .discord {
     scale: 0.8;
+  }
+  footer {
+    grid-template-columns: 65% 1fr;
+  }
+  footer form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  footer form input {
+    width: 49%;
+    height: fit-content;
+  }
+  footer form button {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    margin-left: 0;
   }
 }
 @media (min-width: 1200px) and (max-width: 1349px) {
@@ -331,8 +586,19 @@
   }
 }
 @media (min-width: 1500px) and (max-width: 1649px) {
+  footer {
+    grid-template-columns: 1026px 1fr;
+  }
+  footer .form_logo-container {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    min-width: 906px;
+  }
 }
 @media (min-width: 1650px) and (max-width: 1799px) {
+  footer {
+    grid-template-columns: 1026px 1fr;
+  }
 }
 @media (min-width: 1800px) and (max-width: 1950px) {
 }

@@ -1,363 +1,369 @@
-header * {
-  z-index: 2;
-  border: 1px solid red;
-}
-header {
-  height: 100dvh;
-  width: 100dvw;
-  position: relative;
-  background: var(--blue);
-  padding: 32px 12px;
-}
-header .background-video_header {
-  position: absolute;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
-  inset: 0;
-  z-index: 1;
-  filter: blur(7px);
-  display: none;
-}
-.background-video {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-nav {
-  position: absolute;
-  width: 100%;
-  height: 4vh;
-  inset: 0;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.685);
-}
-.non-mobile-links_and-hamburger {
-  display: flex;
-  padding: 0 12px;
-  place-content: end;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-.non-mobile-links_and-hamburger #hamburger svg,
-.mobile-nav_view #closingBtn svg {
-  fill: var(--light-page-color);
-  scale: 1.5;
-}
-.non-mobile-links_and-hamburger ul {
-  display: none;
-}
-.mobile-nav_view {
-  height: 100vh;
-  background: var(--light-blue);
-  grid-template-rows: 1fr 1fr;
-  z-index: 3;
-  max-width: 100vw;
-  position: absolute;
-  inset: 0;
-  display: none;
-}
+@media (max-width: 600px) {
+  header * {
+    z-index: 2;
+    border: 1px solid red;
+  }
+  header {
+    height: 100dvh;
+    width: 100dvw;
+    position: relative;
+    background: var(--blue);
+    padding: 32px 12px;
+  }
+  nav {
+    position: absolute;
+    width: 100%;
+    height: 6vh;
+    inset: 0;
+    z-index: 10;
+    background: rgba(100, 100, 100, 0.685);
+  }
+  .non-mobile-links_and-hamburger {
+    display: flex;
+    padding: 0 12px;
+    place-content: end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .non-mobile-links_and-hamburger #hamburger svg,
+  .mobile-nav_view #closingBtn svg {
+    fill: var(--light-page-color);
+    scale: 1.5;
+  }
+  .non-mobile-links_and-hamburger ul {
+    display: none;
+  }
+  .mobile-nav_view {
+    height: 100vh;
+    background: var(--light-blue);
+    grid-template-rows: 1fr 1fr;
+    z-index: 3;
+    max-width: 100vw;
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
 
-.mobile-nav_view #closingBtn svg {
-  right: 12px;
-  top: 6px;
-  position: absolute;
-}
-.mobile-nav_links {
-  margin: auto 0;
-  padding: 42px 0;
-}
-.mobile-nav_view ul {
-  width: 100%;
-  height: 60%;
-  display: grid;
-  place-content: center;
-}
-.mobile-nav_view ul li {
-  list-style: none;
-  margin: 30px 0;
-  text-align: center;
-  font-family: var(--heading-font);
-  font-size: 30px;
-  text-transform: uppercase;
-}
-.mobile-nav_view ul li a {
-  text-decoration: none;
-  color: var(--red);
-}
+  .mobile-nav_view #closingBtn svg {
+    right: 12px;
+    top: 6px;
+    position: absolute;
+  }
+  .mobile-nav_links {
+    margin: auto 0;
+    padding: 42px 0;
+  }
+  .mobile-nav_view ul {
+    width: 100%;
+    height: 60%;
+    display: grid;
+    place-content: center;
+  }
+  .mobile-nav_view ul li {
+    list-style: none;
+    margin: 30px 0;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  .mobile-nav_view ul li a {
+    text-decoration: none;
+    color: var(--red);
+  }
 
-.mobile-downloads_container {
-  height: 50%;
-  border: 1px solid green;
-  display: grid;
-  overflow-x: hidden;
-  justify-content: center;
-  align-items: center;
-  grid-template-rows: 50% 50%;
-}
+  .mobile-downloads_container {
+    height: 50%;
+    border: 1px solid green;
+    display: grid;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 50% 50%;
+  }
 
-.mobile-downloads_container .mobile-nav-view_google-play,
-.mobile-downloads_container .mobile-nav-view_itch {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gameLogo {
-  width: 100%;
-  aspect-ratio: 1;
-  background: transparent;
-  margin: 20% 0 10%;
-  position: relative;
-  display: flex;
-  place-content: center;
-}
-header .btn_container {
-  background: transparent;
-  height: 50%;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-content: center;
-  position: relative;
-  top: 0%;
-}
-.btn_container .itch-io,
-.btn_container .google-play,
-.btn_container .discord {
-  display: flex;
-  border: 1px solid red;
-  overflow: hidden;
-  color: red;
-  justify-content: center;
-}
-.btn_container .discord {
-  align-items: center;
-  text-decoration: underline;
-  padding: 10%;
-}
+  .mobile-downloads_container .mobile-nav-view_google-play,
+  .mobile-downloads_container .mobile-nav-view_itch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gameLogo {
+    width: 100%;
+    aspect-ratio: 1;
+    background: transparent;
+    margin: 20% 0 10%;
+    position: relative;
+    display: flex;
+    place-content: center;
+  }
+  header .btn_container {
+    background: transparent;
+    height: 50%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    position: relative;
+    top: 0%;
+  }
+  .btn_container .itch-io,
+  .btn_container .google-play,
+  .btn_container .discord {
+    display: flex;
+    border: 1px solid red;
+    overflow: hidden;
+    color: red;
+    justify-content: center;
+  }
+  .btn_container .discord {
+    align-items: center;
+    text-decoration: underline;
+    padding: 10%;
+  }
 
-.divider {
-  background: rgba(0, 0, 0, 0.685);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: var(--light-page-color);
-  font-size: 12px;
-  text-align: center;
-  width: 100%;
-}
+  .divider {
+    background: rgba(0, 0, 0, 0.685);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--light-page-color);
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+  }
 
-section {
-  height: 100vh;
-  width: 100%;
-}
+  section {
+    height: 100vh;
+    width: 100%;
+  }
 
-#the_creation {
-  background: var(--dark-gray);
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  padding: 36px 12px;
-}
-#the_creation .text_container {
-  padding: 12px;
-  border-radius: 24px;
-  box-shadow: 3px 3px 10px black, inset 3px 3px 10px black;
-  background: rgba(255, 255, 255, 0.219);
-}
+  #the_creation {
+    background: var(--dark-gray);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 12px;
+  }
+  #the_creation .text_container {
+    margin: auto;
+  }
+  .text_container h1 {
+    font-size: 50px;
+  }
+  .text_container p {
+    font-size: 18px;
+  }
+  .assests .objects:first-child {
+    right: 23%;
+    bottom: 8%;
+  }
+  .assests .objects:nth-child(2) {
+    left: 12%;
+    bottom: 8%;
+  }
+  .assests .objects:nth-child(3) {
+    right: 23%;
+    top: 12%;
+  }
+  .assests .objects:last-child {
+    left: 12%;
+    top: 12%;
+  }
+  .assests .objects img {
+    scale: 0.8;
+  }
+  .assests .objects:nth-child(3) img {
+    transform: scaleX(1) !important;
+  }
+  .assests .objects:first-child img {
+    transform: scaleX(1) !important;
+  }
+  /* --------------Game story-------------- */
+  #game-story {
+    background: var(--light-blue);
+    position: relative;
+    padding: 24px 12px;
+  }
+  #game-story .text-container {
+    background: rgba(202, 185, 185, 0.377);
+    padding: 0 12px;
+    width: fit-content;
+    max-width: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+  }
+  #game-story .img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px 0;
+  }
+  #game-story .text-container {
+    align-items: end;
+    padding: 12px;
+  }
+  .gameLogo {
+    width: 60.5%;
+    height: 44%;
+  }
 
-.text_container h1 {
-  font-family: var(--heading-font);
-  text-align: center;
-  font-size: 38px;
-  margin: 12px 0;
-}
+  #game-story .text-container h1 {
+    font-family: var(--heading-font);
+    margin: 12px 0;
+    font-size: 28px;
+  }
+  #game-story .text-container p {
+    line-height: 1.5;
+    text-align: center;
+  }
+  #game-story img {
+    height: 48% !important;
+    aspect-ratio: 16/8;
+  }
 
-.text_container p {
-  text-align: center;
-  line-height: 1.5;
-  font-size: 17px;
-}
+  /* --------------StoryLine-------------- */
+  #storyLine {
+    background: var(--blue);
+    position: relative;
+    padding: 24px 12px;
+    display: flex;
+    place-items: center;
+  }
 
-#the_creation .assests {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
+  #storyLine .text-container {
+    padding: 12px;
+    text-align: center;
+    width: 80%;
+  }
+  #storyLine .text-container .text-wrapper {
+    padding: 0;
+  }
+  #storyLine .text-container h1 {
+    font-family: var(--heading-font);
+    margin: 12px 0;
+    font-size: 40px;
+  }
+  #storyLine .text-container p {
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  #storyLine .assets .objects img {
+    scale: 1;
+    position: absolute;
+    left: 70%;
+    top: 30%;
+    transform: translateX(-80%);
+  }
+  #storyLine .assets .objects:first-child {
+    left: 20%;
+    top: 20%;
+  }
+  #storyLine .assets .objects:nth-child(2) {
+    left: 12%;
+    top: 77%;
+    display: none;
+  }
+  #storyLine .assets .objects:nth-child(3) {
+    right: 12%;
+    top: 77%;
+  }
+  #storyLine .assets .objects:nth-child(4) {
+    left: 0%;
+    top: 70%;
+  }
+  #storyLine .assets .objects:nth-child(5) {
+    left: 12%;
+    top: 77%;
+  }
+  #storyLine .assets .objects:nth-child(6) {
+    right: 0%;
+    top: 70%;
+  }
+  #storyLine .assets .objects:nth-child(7) {
+    right: 30%;
+    top: 20%;
+  }
+  #storyLine .assets .objects:nth-child(8) {
+    left: 0%;
+    top: 8%;
+  }
+  #storyLine .assets .objects:nth-child(9) {
+    right: 0%;
+    top: 8%;
+  }
 
-#the_creation .assests .objects {
-  width: 30px;
-  aspect-ratio: 1;
-  background: red;
-}
+  footer {
+    grid-template-rows: 66% 1fr;
+    grid-template-columns: none;
+    padding: 12px;
+  }
+  footer form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    background: green;
+  }
+  footer form input {
+    text-align: center;
+  }
+  footer .bottom-links-and_downloads {
+    display: grid;
+    grid-template-rows: 65% 35%;
+  }
+  footer .bottom-links-and_downloads .download_buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 48px;
+  }
+  footer .google_play,
+  footer .itch_io {
+    justify-content: center;
+    height: 100%;
+  }
+  footer .bottom-links-and_downloads .download_buttons .google_play img {
+    margin-top: 0px;
+  }
+  .bottom-links-and_downloads .links ul {
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  footer .form_logo-container {
+    grid-template-columns: 100%;
+    display: block;
+    height: 100%;
+  }
 
-.assests .objects:first-child {
-  right: 70px;
-  bottom: 120px;
-  position: absolute;
-}
-.assests .objects:nth-child(2) {
-  left: 120px;
-  bottom: 120px;
-  position: absolute;
-}
-.assests .objects:nth-child(3) {
-  right: 30px;
-  top: 120px;
-  position: absolute;
-}
-.assests .objects:last-child {
-  left: 30px;
-  top: 100px;
-  position: absolute;
-}
-/* --------------Game story-------------- */
-#game-story {
-  background: var(--light-blue);
-  position: relative;
-  padding: 24px 12px;
-}
-#game-story .text-container {
-  background: red;
-  padding: 12px;
-  margin: 24px 0;
-  text-align: center;
-}
-
-#game-story .text-container h1 {
-  font-family: var(--heading-font);
-  margin: 12px 0;
-  font-size: 28px;
-}
-#game-story .text-container p {
-  line-height: 1.5;
-}
-#game-story img {
-  width: 100%;
-  height: 1fr;
-}
-
-/* --------------StoryLine-------------- */
-#storyLine {
-  background: var(--blue);
-  position: relative;
-  padding: 24px 12px;
-  display: flex;
-  place-items: center;
-}
-
-#storyLine .text-container {
-  background: red;
-  padding: 12px;
-  margin: 24px 0;
-  text-align: center;
-}
-
-#storyLine .text-container h1 {
-  font-family: var(--heading-font);
-  margin: 12px 0;
-  font-size: 28px;
-}
-#storyLine .text-container p {
-  line-height: 1.5;
-}
-
-/* ----------------Footer--------- */
-
-footer {
-  background: var(--dark-blue);
-  height: 100vh;
-  padding: 32px 12px;
-  position: relative;
-}
-footer form {
-  margin: 80px 0;
-}
-
-footer form input {
-  border: none;
-  border-bottom: 3px solid var(--light-page-color);
-  background: transparent;
-  padding: 12px 12px 0;
-  outline: none;
-  text-align: center;
-  color: var(--light-page-color);
-  width: 100%;
-  height: 50px;
-  margin: 24px 0;
-  font-size: 20px;
-}
-
-footer form input::placeholder {
-  color: var(--light-page-color);
-  font-size: 20px;
-}
-
-footer form button {
-  background: var(--red);
-  width: 100%;
-  height: 60px;
-  margin-top: 24px;
-  border-radius: 12px;
-  border: none;
-  outline: none;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-footer .bottom-links-and_downloads {
-  display: grid;
-  grid-template-columns: 50% 50%;
-} /* 
-footer .bottom-links-and_downloads .download_buttons {
-  display: grid;
-  grid-template-rows: 50% 50%;
-}*/
-footer .google_play,
-footer .itch_io {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: aliceblue;
-}
-footer .google_play img,
-.itch_io img {
-  scale: 0.34;
-}
-.itch_io img {
-  scale: 0.28;
-}
-.itch_io .itch-mask {
-  background: #fe5d5b;
-}
-footer .links ul {
-  display: grid;
-  height: 100%;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-footer .links ul li {
-  list-style: none;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-footer .links ul li a {
-  color: var(--light-page-color);
-  font-size: 18px;
-  text-decoration: none;
+  footer .img_container {
+    display: none;
+  }
+  footer form input {
+    width: 100%;
+    max-width: none;
+  }
+  footer form button {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    margin-left: 0;
+    height: 60px;
+  }
+  footer .form-container p {
+    padding: 0;
+    text-align: center;
+  }
+  footer .form-container {
+    grid-template-rows: 30% 70%;
+    height: 100%;
+    padding: 0;
+  }
 }
