@@ -1,16 +1,40 @@
-.mobile-downloads_container .mobile-nav-view_google-play img,
-.mobile-downloads_container .mobile-nav-view_itch img {
-  scale: 0.5;
-  /* will style later just need to get the whole website layout in check first */
+@media (max-width: 349px) {
+  .btn_container .itch-io,
+  .btn_container .google-play,
+  .btn_container .discord {
+    height: 65px;
+  }
+  .mobile-downloads_container img {
+    height: 50px;
+  }
+  .mobile-downloads_container img:last-child {
+    border-radius: 6px;
+  }
 }
 @media (min-width: 350px) and (max-width: 399px) {
   footer .bottom-links-and_downloads .download_buttons img {
     height: 48px !important ;
   }
+  .btn_container .itch-io,
+  .btn_container .google-play,
+  .btn_container .discord {
+    height: 90px;
+  }
+  .mobile-downloads_container img {
+    height: 50px;
+  }
+  .mobile-downloads_container img:last-child {
+    border-radius: 6px;
+  }
 }
 @media (min-width: 400px) and (max-width: 449px) {
   footer .bottom-links-and_downloads .download_buttons img {
     height: 56px !important ;
+  }
+  .btn_container .itch-io,
+  .btn_container .google-play,
+  .btn_container .discord {
+    height: 100px;
   }
 }
 @media (min-width: 450px) and (max-width: 499px) {

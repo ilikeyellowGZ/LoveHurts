@@ -1,7 +1,7 @@
 @media (max-width: 600px) {
   header * {
     z-index: 2;
-    border: 1px solid red;
+    border: 1px solid green;
   }
   header {
     height: 100dvh;
@@ -9,6 +9,7 @@
     position: relative;
     background: var(--blue);
     padding: 32px 12px;
+    overflow-y: hidden;
   }
   nav {
     position: absolute;
@@ -26,15 +27,33 @@
     width: 100%;
     height: 100%;
   }
-  .non-mobile-links_and-hamburger #hamburger svg,
-  .mobile-nav_view #closingBtn svg {
+  .non-mobile-links_and-hamburger .hamburger,
+  .non-mobile-links_and-hamburger #closingBtn {
+    width: 55px;
+    height: 55px;
+  }
+  .non-mobile-links_and-hamburger .hamburger {
+    display: none;
+  }
+  .non-mobile-links_and-hamburger #closingBtn {
+    position: absolute;
+    right: 14px;
+    top: -2px;
+    z-index: 100;
+  }
+  .non-mobile-links_and-hamburger .hamburger svg,
+  .non-mobile-links_and-hamburger #closingBtn svg {
     fill: var(--light-page-color);
-    scale: 1.5;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    display: block;
   }
   .non-mobile-links_and-hamburger ul {
     display: none;
   }
-  .mobile-nav_view {
+  #mobile-nav_view {
     height: 100vh;
     background: var(--light-blue);
     grid-template-rows: 1fr 1fr;
@@ -43,24 +62,27 @@
     position: absolute;
     inset: 0;
     display: block;
+    z-index: 1000;
+    padding-top: 2vh;
   }
 
-  .mobile-nav_view #closingBtn svg {
+  #mobile-nav_view #closingBtn svg {
     right: 12px;
     top: 6px;
     position: absolute;
   }
   .mobile-nav_links {
     margin: auto 0;
-    padding: 42px 0;
-  }
-  .mobile-nav_view ul {
-    width: 100%;
+    padding: 42px 0 0;
     height: 60%;
+  }
+  #mobile-nav_view .mobile-nav_links ul {
+    width: 100%;
+    height: 100%;
     display: grid;
     place-content: center;
   }
-  .mobile-nav_view ul li {
+  #mobile-nav_view .mobile-nav_links ul li {
     list-style: none;
     margin: 30px 0;
     text-align: center;
@@ -68,26 +90,50 @@
     font-size: 30px;
     text-transform: uppercase;
   }
-  .mobile-nav_view ul li a {
+  #mobile-nav_view .mobile-nav_links ul li a {
     text-decoration: none;
     color: var(--red);
   }
 
   .mobile-downloads_container {
-    height: 50%;
-    border: 1px solid green;
+    height: 20%;
     display: grid;
     overflow-x: hidden;
     justify-content: center;
     align-items: center;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
   }
-
-  .mobile-downloads_container .mobile-nav-view_google-play,
-  .mobile-downloads_container .mobile-nav-view_itch {
-    display: flex;
-    justify-content: center;
+  .mobile-downloads_container img {
+    aspect-ratio: 3.32 / 1;
+    height: 60px;
+    justify-self: center;
+  }
+  .mobile-downloads_container img:last-child {
+    border-radius: 6px;
+  }
+  .mobile_nav-linking-links {
+    height: 20%;
+  }
+  .mobile_nav-linking-links ul {
+    height: 100%;
+    justify-content: space-evenly;
     align-items: center;
+    display: flex;
+  }
+  .mobile_nav-linking-links ul li {
+    text-align: center;
+    list-style: none;
+    margin: 10px 0;
+  }
+  .mobile_nav-linking-links ul li a {
+    padding: 12px;
+    text-decoration: none;
+    color: var(--light-page-color);
+    font-size: 18px;
+    color: red;
+    position: relative;
+    transition: 0.4s;
+    font-family: var(--general-font);
   }
   .gameLogo {
     width: 100%;
@@ -98,28 +144,47 @@
     display: flex;
     place-content: center;
   }
+  .gameLogo {
+    background: url(/media/Love_Hurts_Title.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translate(-50%, -40%);
+    margin-bottom: 0;
+  }
   header .btn_container {
     background: transparent;
     height: 50%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     position: relative;
     top: 0%;
+    gap: 0;
+    grid-template-rows: none;
+    align-content: center;
   }
   .btn_container .itch-io,
   .btn_container .google-play,
   .btn_container .discord {
     display: flex;
-    border: 1px solid red;
-    overflow: hidden;
+    overflow: visible;
     color: red;
-    justify-content: center;
+    height: 100px;
+    justify-self: center;
+    margin: 15px 0;
+  }
+  .btn_container .itch-io img,
+  .btn_container .google-play img {
+    aspect-ratio: 3.32 / 1;
+    height: 100%;
   }
   .btn_container .discord {
     align-items: center;
     text-decoration: underline;
     padding: 10%;
+    aspect-ratio: 3.32 / 1;
+    height: 100px;
   }
 
   .divider {
@@ -151,9 +216,11 @@
   }
   .text_container h1 {
     font-size: 50px;
+    text-align: center;
   }
   .text_container p {
     font-size: 18px;
+    text-align: center;
   }
   .assests .objects:first-child {
     right: 23%;
@@ -207,10 +274,6 @@
   #game-story .text-container {
     align-items: end;
     padding: 12px;
-  }
-  .gameLogo {
-    width: 60.5%;
-    height: 44%;
   }
 
   #game-story .text-container h1 {
