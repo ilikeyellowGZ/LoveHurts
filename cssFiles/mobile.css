@@ -286,8 +286,8 @@
     text-align: center;
   }
   #game-story img {
-    height: 48% !important;
-    aspect-ratio: 16/8;
+    height: 48%;
+    aspect-ratio: 16/9 !important;
   }
 
   /* --------------StoryLine-------------- */

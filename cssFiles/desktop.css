@@ -42,7 +42,7 @@ nav {
   background: rgba(0, 0, 0, 0.685);
 }
 
-.mobile-nav_view {
+#mobile-nav_view {
   display: none;
 }
 .non-mobile-links_and-hamburger .hamburger svg,
@@ -163,7 +163,6 @@ section {
   border-radius: 24px;
   box-shadow: 1px 0px 39px -4px rgba(0, 0, 0, 0.52);
   max-width: 600px;
-  aspect-ratio: 2/1;
   display: flex;
   color: #191919;
   position: relative;
@@ -241,7 +240,8 @@ section {
   grid-template-rows: 40% 20% 40%;
 }
 #game-story .text-container {
-  background: rgba(202, 185, 185, 0.377);
+  box-shadow: 1px 0px 39px -4px rgba(0, 0, 0, 0.52);
+  border-radius: 24px;
   padding: 0 12px;
   width: fit-content;
   max-width: 700px;
@@ -277,20 +277,21 @@ section {
 
 /* -------------------------#storyLine---------- */
 #storyLine {
-  background: var(--blue);
+  background: var(--dark-gray);
   position: relative;
   padding: 24px 12px;
   display: flex;
   place-items: center;
 }
 #storyLine .text-container {
-  background: silver;
   padding: 12px;
   margin: 24px auto;
   text-align: center;
   width: 50%;
   display: flex;
   align-items: center;
+  box-shadow: 1px 0px 39px -4px rgba(0, 0, 0, 0.52);
+  border-radius: 24px;
 }
 #storyLine .text-container .text-wrapper {
   height: 100%;
@@ -420,9 +421,10 @@ footer form input::placeholder {
   font-size: 20px;
 }
 
-footer form button {
+/* footer form button {
   background: var(--red);
   width: 15%;
+  min-width: 200px;
   height: 60px;
   margin-top: 10px;
   margin-left: 10px;
@@ -439,12 +441,67 @@ footer form button {
   text-transform: uppercase;
   text-align: left;
   cursor: pointer;
+ 
+} */
+.button {
+  background-color: #ffffff00;
+  color: #fff;
+  width: 15%;
+  min-width: 200px;
+  height: 60px;
+  border: #3654ff 0.2em solid;
+  border-radius: 12px;
+  text-align: right;
+  transition: all 0.6s ease;
   flex-grow: 2;
   max-width: 242px;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: relative;
+
+  place-content: center;
+}
+
+.button:hover {
+  background-color: #3654ff;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.button:active {
+  background-color: #3654ff;
+  cursor: pointer;
+  scale: 0.98;
+  border-radius: 16px;
+}
+
+.button svg {
+  width: 1.6em;
+  margin: 0 0.3em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button:hover svg {
+  transform: translateX(7px) translateY(-50%);
+
+  margin: 0 0.2em;
+}
+
+.text {
+  font-size: 25px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  text-align: center;
+  margin-left: 0.3em;
+  padding-left: 0.3em;
 }
 footer .img_container {
   position: relative;
   display: flex;
+
   align-items: center;
 }
 
