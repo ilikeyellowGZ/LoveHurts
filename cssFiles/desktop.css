@@ -42,9 +42,6 @@ nav {
   background: rgba(0, 0, 0, 0.685);
 }
 
-#mobile-nav_view {
-  display: none;
-}
 .non-mobile-links_and-hamburger .hamburger svg,
 #closingBtn svg {
   display: none;
@@ -61,16 +58,16 @@ nav {
 }
 .non-mobile-links_and-hamburger ul li {
   list-style: none;
-  margin-left: 30px;
+  margin-left: 15px;
   padding: 8px;
 }
 
 .non-mobile-links_and-hamburger ul li a {
-  font-size: 20px;
+  font-size: 17px;
   color: var(--light-page-color);
   text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 2;
+  text-transform: capitalize;
+  font-family: var(--links-font);
 }
 
 .gameLogo {
@@ -85,7 +82,7 @@ nav {
   height: 40%;
   transform: translate(-50%);
   position: absolute;
-  z-index: 10;
+  z-index: 2;
 }
 
 header .btn_container {
@@ -112,21 +109,38 @@ header .btn_container {
   overflow: hidden;
   justify-content: center;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  transition: 0.4s;
+}
+.btn_container .itch-io:hover,
+.btn_container .google-play:hover {
+  scale: 1.02;
+}
+.btn_container .itch-io:active,
+.btn_container .google-play:active {
+  scale: 0.98;
 }
 
+.btn_container .itch-io img,
+.btn_container .google-play img {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
 .btn_container .discord {
   align-items: center;
   transition: 0.3s;
   cursor: pointer;
-  border: 1px solid red;
   overflow: hidden;
   color: red;
   border-radius: 10px;
 }
-.btn_container .discord h1 {
-  transition: 0.3s;
+.btn_container .discord * {
+  transition: 3s;
 }
-.btn_container .discord:hover > h1 {
+.btn_container .discord:hover h1 {
   text-decoration: underline;
   transition: 0.3s;
 }
@@ -162,7 +176,7 @@ section {
   padding: 24px;
   border-radius: 24px;
   box-shadow: 1px 0px 39px -4px rgba(0, 0, 0, 0.52);
-  max-width: 600px;
+  max-width: 750px;
   display: flex;
   color: #191919;
   position: relative;
@@ -177,10 +191,25 @@ section {
   margin: 12px 0;
 }
 
-.text_container p {
+.text_container .paragraph-text_creation {
   text-align: left;
   line-height: 1.5;
   font-size: 23px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.text_container .paragraph-text_creation div {
+  border-top: 1px solid #191919;
+  display: flex;
+}
+.text_container .paragraph-text_creation div:first-child {
+  border-top: none;
+}
+
+.text_container .paragraph-text_creation div span:first-child {
+  flex-grow: 1;
+  display: flex;
+  min-width: 91px;
 }
 #the_creation .assests {
   width: 100%;
@@ -210,7 +239,7 @@ section {
 }
 
 .assests .objects:nth-child(2) {
-  right: 50%;
+  right: 35%;
   bottom: 90px;
   position: absolute;
 }
@@ -267,12 +296,22 @@ section {
 }
 #game-story .text-container p {
   line-height: 1.5;
-  text-align: justify;
+  text-align: center;
 }
 #game-story img {
   height: 100%;
   border-radius: 12px;
   aspect-ratio: 16/9;
+}
+#game-story .imgOne,
+#game-story .imgTwo {
+  margin-top: auto;
+  height: 95%;
+}
+#game-story .imgThree,
+#game-story .imgFour {
+  margin-bottom: auto;
+  height: 95%;
 }
 
 /* -------------------------#storyLine---------- */
@@ -390,7 +429,7 @@ footer form {
 }
 footer .form-container {
   padding: 24px 0;
-  background: pink;
+
   display: grid;
   position: relative;
 }
@@ -444,12 +483,12 @@ footer form input::placeholder {
  
 } */
 .button {
-  background-color: #ffffff00;
+  background-color: var(--yellow);
   color: #fff;
   width: 15%;
   min-width: 200px;
   height: 60px;
-  border: #3654ff 0.2em solid;
+  border: #fff 0.2em solid;
   border-radius: 12px;
   text-align: right;
   transition: all 0.6s ease;
@@ -463,12 +502,12 @@ footer form input::placeholder {
 }
 
 .button:hover {
-  background-color: #3654ff;
+  background-color: var(--yellow);
   cursor: pointer;
   border-radius: 16px;
 }
 .button:active {
-  background-color: #3654ff;
+  background-color: var(--yellow);
   cursor: pointer;
   scale: 0.98;
   border-radius: 16px;
@@ -482,14 +521,17 @@ footer form input::placeholder {
   transition: all 0.6s ease;
   top: 50%;
   transform: translateY(-50%);
+  color: var(--red);
 }
 
 .button:hover svg {
   transform: translateX(7px) translateY(-50%);
-
   margin: 0 0.2em;
+  color: #fff;
 }
-
+.button:hover .text {
+  color: var(--red);
+}
 .text {
   font-size: 25px;
   font-family: var(--heading-font);
@@ -497,6 +539,7 @@ footer form input::placeholder {
   text-align: center;
   margin-left: 0.3em;
   padding-left: 0.3em;
+  transition: all 0.6s ease;
 }
 footer .img_container {
   position: relative;
@@ -535,6 +578,7 @@ footer .itch_io {
   flex-direction: column;
   justify-content: space-evenly;
   list-style: none;
+  position: relative;
 }
 .bottom-links-and_downloads .links ul li {
   text-align: end;
@@ -544,16 +588,36 @@ footer .itch_io {
   padding: 12px;
   text-decoration: none;
   color: var(--light-page-color);
-  font-size: 19px;
-  color: red;
+  font-size: 17px;
+  color: #fff;
   position: relative;
   transition: 0.4s;
+  text-transform: capitalize;
+  font-family: var(--links-font);
 }
 .bottom-links-and_downloads .links ul li a:hover {
-  color: white;
+  color: var(--yellow);
   font-size: 20px;
+  transform: translateX(-20px);
 }
 footer .bottom-links-and_downloads {
   display: grid;
   grid-template-rows: 50% 50%;
+}
+
+#letsStayConnected {
+  color: var(--light-page-color);
+  padding: 12px 8px;
+  width: 100%;
+}
+#letsStayConnected h1 {
+  text-align: left;
+  font-family: var(--heading-font);
+  margin-bottom: 0px;
+  font-size: 60px;
+}
+#letsStayConnected p {
+  font-size: 23px;
+  text-align: left;
+  font-family: var(--heading-font);
 }

@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Pixelify+Sans:wght@650&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Pixelify+Sans:wght@500&family=Poppins:wght@500&display=swap");
 
 :root {
   --red: #d90000;
   --green: #02dd00;
+  --yellow: #ff8501;
   --dark-blue: #419fd6;
   --blue: #48ace2;
   --light-blue: #9acfe9;
@@ -12,6 +13,7 @@
   --light-page-color: #fbfbf2;
   --general-font: "GFS Neohellenic", sans-serif;
   --heading-font: "Pixelify Sans", sans-serif;
+  --links-font: "Poppins", sans-serif;
   --itch-color: #fe5d5b;
 }
 
@@ -19,6 +21,9 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {

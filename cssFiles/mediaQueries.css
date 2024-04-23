@@ -10,6 +10,12 @@
   .mobile-downloads_container img:last-child {
     border-radius: 6px;
   }
+  .bottom-links-and_downloads .links ul li a {
+    font-size: 8px;
+  }
+  #letsStayConnected {
+    padding: 0;
+  }
 }
 @media (min-width: 350px) and (max-width: 399px) {
   footer .bottom-links-and_downloads .download_buttons img {
@@ -25,6 +31,9 @@
   }
   .mobile-downloads_container img:last-child {
     border-radius: 6px;
+  }
+  #letsStayConnected {
+    padding: 0;
   }
 }
 @media (min-width: 400px) and (max-width: 449px) {
@@ -49,14 +58,23 @@
 }
 @media (min-width: 550px) and (max-width: 600px) {
   footer .bottom-links-and_downloads .download_buttons img {
-    height: 80px !important ;
+    height: 72px !important ;
   }
 }
 @media (min-width: 601px) and (max-width: 649px) {
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 75px !important;
+  }
 }
 @media (min-width: 650px) and (max-width: 699px) {
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 83px !important;
+  }
 }
 @media (min-width: 700px) and (max-width: 749px) {
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 88px !important;
+  }
 }
 @media (min-width: 750px) and (max-width: 799px) {
 }
@@ -65,10 +83,19 @@
 @media (min-width: 850px) and (max-width: 899px) {
 }
 @media (min-width: 900px) and (max-width: 949px) {
+  #game-story img {
+    height: 68% !important;
+  }
 }
 @media (min-width: 950px) and (max-width: 999px) {
+  #game-story img {
+    height: 70% !important;
+  }
 }
 @media (min-width: 1000px) and (max-width: 1049px) {
+  #game-story img {
+    height: 76% !important;
+  }
 }
 @media (min-width: 1050px) and (max-width: 1099px) {
 }
@@ -91,172 +118,16 @@
 @media (min-width: 1500px) and (max-width: 1549px) {
 }
 @media (min-width: 1550px) and (max-width: 1599px) {
-  #the_creation .text_container {
-    margin: auto;
+  #game-story .imgOne + .imgTwo {
+    margin-top: auto;
+    height: 95%;
   }
-  .text_container h1 {
-    font-size: 50px;
-  }
-  .text_container p {
-    font-size: 18px;
-  }
-  .assests .objects:first-child {
-    right: 25%;
-    bottom: 8%;
-  }
-  .assests .objects:nth-child(2) {
-    right: 60%;
-    bottom: 8%;
-  }
-  .assests .objects:nth-child(3) {
-    right: 20%;
-    top: 12%;
-  }
-  .assests .objects:last-child {
-    left: 20%;
-    top: 12%;
-  }
-  .assests .objects img {
-    scale: 0.8;
-  }
-  .assests .objects:nth-child(3) img {
-    transform: scaleX(1) !important;
-  }
-  .assests .objects:first-child img {
-    transform: scaleX(1) !important;
-  }
-  #game-story img {
-    height: 90% !important;
-  }
-  #game-story {
-    padding: 36px 20px;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
-  }
-  #game-story img {
-    height: 40% !important;
-  }
-  #game-story .img-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-  }
-  #game-story .text-container {
-    align-items: end;
-  }
-  .gameLogo {
-    width: 60.5%;
-    height: 44%;
-  }
-  header .btn_container {
-    row-gap: 20px;
-    justify-content: center;
-  }
-  .btn_container .itch-io,
-  .btn_container .google-play,
-  .btn_container .discord {
-    scale: 0.9;
-  }
-  #storyLine .text-container {
-    padding: 0px;
-  }
-  #storyLine .text-container .text-wrapper {
-    padding: 0;
-  }
-  #storyLine .text-container h1 {
-    margin-bottom: 10px;
-    font-size: 40px;
-  }
-  #storyLine .text-container p {
-    font-size: 16px;
-  }
-  #storyLine .assets .objects img {
-    scale: 1.5;
-  }
-  #storyLine .assets .objects:nth-child(2) {
-    left: 4%;
-  }
-  #storyLine .assets .objects:nth-child(3) {
-    right: 4%;
-  }
-  #storyLine .assets .objects:nth-child(4) {
-    left: 13%;
-  }
-  #storyLine .assets .objects:nth-child(5) {
-    left: 42%;
-  }
-  #storyLine .assets .objects:nth-child(6) {
-    right: 13%;
-  }
-  footer {
-    grid-template-rows: 66% 1fr;
-    grid-template-columns: none;
-  }
-  footer form {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 100%;
-    background: green;
-  }
-  footer form input {
-    text-align: center;
-  }
-  footer .bottom-links-and_downloads {
-    display: grid;
-    grid-template-rows: 65% 35%;
-  }
-  footer .bottom-links-and_downloads .download_buttons {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  footer .bottom-links-and_downloads .download_buttons img {
-    height: 80px;
-  }
-  footer .google_play,
-  footer .itch_io {
-    justify-content: center;
-    height: 100%;
-  }
-  footer .bottom-links-and_downloads .download_buttons .google_play img {
-    margin-top: 0px;
-  }
-  .bottom-links-and_downloads .links ul {
-    height: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  footer .form_logo-container {
-    grid-template-columns: 100%;
-    display: block;
-    height: 100%;
-  }
-
-  footer .img_container {
-    display: none;
-  }
-  footer form input {
-    width: 100%;
-    max-width: none;
-  }
-  footer form button {
-    width: 100%;
-    max-width: none;
-    margin-top: 0;
-    margin-left: 0;
-    height: 60px;
-  }
-  footer .form-container p {
-    padding: 0;
-    text-align: center;
-  }
-  footer .form-container {
-    grid-template-rows: 30% 70%;
-    height: 100%;
+  #game-story .imgThree + .imgfour {
+    margin-bottom: auto;
+    height: 95%;
   }
 }
-@media (min-width: 750px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 749px) {
   #the_creation .text_container {
     margin: auto;
   }
@@ -281,6 +152,12 @@
   .assests .objects:last-child {
     left: 20%;
     top: 12%;
+  }
+  .text_container .paragraph-text_creation div span:first-child {
+    flex-grow: 1;
+    display: flex;
+    max-width: 75px;
+    min-width: 75px;
   }
   .assests .objects:nth-child(3) img {
     transform: scaleX(1) !important;
@@ -304,6 +181,189 @@
   #game-story .text-container {
     align-items: end;
     padding: 12px;
+    margin-top: auto;
+    height: max-content;
+  }
+  .gameLogo {
+    width: 60.5%;
+    height: 44%;
+  }
+  header .btn_container {
+    row-gap: 16px;
+    justify-content: center;
+  }
+  .btn_container .itch-io,
+  .btn_container .google-play,
+  .btn_container .discord {
+    scale: 0.9;
+  }
+  #storyLine .text-container {
+    padding: 0px;
+  }
+  #game-story {
+    padding-inline: 12px;
+  }
+  #storyLine .text-container .text-wrapper {
+    padding: 12px 15px;
+  }
+  #storyLine .text-container h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+  #storyLine .text-container p {
+    font-size: 18px;
+  }
+  .text_container .paragraph-text_creation div {
+    display: flex;
+    font-size: 18px;
+  }
+  #storyLine .assets .objects img {
+    scale: 1.5;
+  }
+  #storyLine .assets .objects:nth-child(2) {
+    left: 4%;
+  }
+  #storyLine .assets .objects:nth-child(3) {
+    right: 4%;
+  }
+  #storyLine .assets .objects:nth-child(4) {
+    left: 13%;
+  }
+  #storyLine .assets .objects:nth-child(5) {
+    left: 42%;
+  }
+  #storyLine .assets .objects:nth-child(6) {
+    right: 13%;
+  }
+  footer {
+    grid-template-rows: 58% 1fr;
+    grid-template-columns: none;
+  }
+  footer form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: auto 0;
+  }
+  footer form input {
+    text-align: center;
+  }
+  footer .bottom-links-and_downloads {
+    display: grid;
+    grid-template-rows: 65% 35%;
+  }
+  footer .bottom-links-and_downloads .download_buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 95px;
+  }
+  footer .google_play,
+  footer .itch_io {
+    justify-content: center;
+    height: 100%;
+  }
+  footer .bottom-links-and_downloads .download_buttons .google_play img {
+    margin-top: 0px;
+  }
+  .bottom-links-and_downloads .links ul {
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  footer .form_logo-container {
+    grid-template-columns: 100%;
+    display: block;
+    height: 100%;
+  }
+  footer .form-container {
+    padding: 24px 0;
+    display: grid;
+    height: 100%;
+  }
+  footer .img_container {
+    display: none;
+  }
+  footer form input {
+    width: 49%;
+    height: fit-content;
+  }
+  footer form .button {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  footer .form-container p {
+    padding: 0;
+  }
+  footer .form-container {
+    grid-template-rows: 50% 50%;
+  }
+}
+@media (min-width: 750px) and (max-width: 900px) {
+  #the_creation .text_container {
+    margin: auto;
+  }
+  .text_container h1 {
+    font-size: 50px;
+  }
+  .text_container p {
+    font-size: 18px;
+  }
+  .text_container .paragraph-text_creation div {
+    display: flex;
+    font-size: 18px;
+  }
+  .assests .objects:first-child {
+    right: 25%;
+    bottom: 8%;
+  }
+  .assests .objects:nth-child(2) {
+    right: 60%;
+    bottom: 8%;
+  }
+  .assests .objects:nth-child(3) {
+    right: 20%;
+    top: 12%;
+  }
+  .assests .objects:last-child {
+    left: 20%;
+    top: 12%;
+  }
+  .text_container .paragraph-text_creation div span:first-child {
+    flex-grow: 1;
+    display: flex;
+    max-width: 88px;
+    min-width: 88px;
+  }
+  .assests .objects:nth-child(3) img {
+    transform: scaleX(1) !important;
+  }
+  .assests .objects:first-child img {
+    transform: scaleX(1) !important;
+  }
+  #game-story {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+  #game-story img {
+    height: 40% !important;
+  }
+  #game-story .img-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  #game-story .text-container {
+    align-items: end;
+    padding: 12px;
+    margin-top: auto;
+    height: max-content;
   }
   .gameLogo {
     width: 60.5%;
@@ -322,7 +382,7 @@
     padding: 0px;
   }
   #storyLine .text-container .text-wrapper {
-    padding: 0;
+    padding: 12px 15px;
   }
   #storyLine .text-container h1 {
     margin-bottom: 10px;
@@ -395,7 +455,6 @@
   }
   footer .form-container {
     padding: 24px 0;
-    background: pink;
     display: grid;
     height: 100%;
   }
@@ -406,7 +465,7 @@
     width: 49%;
     height: fit-content;
   }
-  footer form button {
+  footer form .button {
     width: 100%;
     max-width: none;
     margin-top: 0;
@@ -420,20 +479,37 @@
   }
 }
 @media (min-width: 901px) and (max-width: 1049px) {
+  .text_container .paragraph-text_creation div {
+    display: flex;
+    font-size: 20px;
+  }
   .assests .objects:first-child {
-    right: 12%;
-  }
-  .assests .objects:nth-child(2) {
-    right: 50%;
-  }
-  .assests .objects:nth-child(3) {
-    right: 10%;
+    right: 0px;
+    bottom: 25%;
+    position: absolute;
   }
   .assests .objects:last-child {
-    left: 40%;
+    left: 60%;
+    top: 70px;
+    position: absolute;
+  }
+  .assests .objects:nth-child(3) {
+    right: 0%;
+    top: 190px;
+    position: absolute;
+  }
+  .assests .objects:nth-child(2) {
+    right: 30%;
+    bottom: 50px;
+    position: absolute;
+  }
+  .text_container .paragraph-text_creation div span:first-child {
+    flex-grow: 1;
+    display: flex;
+    max-width: 88px;
   }
   #game-story img {
-    height: 70% !important;
+    height: 70%;
   }
   .gameLogo {
     width: 60.5%;
@@ -451,9 +527,7 @@
   #storyLine .text-container {
     padding: 0px;
   }
-  #storyLine .text-container .text-wrapper {
-    padding: 0;
-  }
+
   #storyLine .text-container h1 {
     margin-bottom: 10px;
     font-size: 50px;
@@ -476,7 +550,7 @@
     width: 49%;
     height: fit-content;
   }
-  footer form button {
+  footer form .button {
     width: 100%;
     max-width: none;
     margin-top: 0;
@@ -488,49 +562,8 @@
   footer .form-container {
     grid-template-rows: 50% 50%;
   }
-}
-@media (min-width: 1050px) and (max-width: 1199px) {
-  #the_creation .assests .objects {
-    transform: translateX(50%);
-  }
-  #game-story img {
-    height: 75% !important;
-  }
-  header .btn_container {
-    row-gap: 16px;
-  }
-  .btn_container .itch-io,
-  .btn_container .google-play,
-  .btn_container .discord {
-    scale: 0.8;
-  }
-  #storyLine .text-container {
-    padding: 0px;
-  }
-  #storyLine .text-container .text-wrapper {
-    padding: 0;
-  }
-  #storyLine .text-container h1 {
-    margin-bottom: 10px;
-    font-size: 50px;
-  }
-  footer {
-    grid-template-columns: 65% 1fr;
-  }
-  footer form {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  footer form input {
-    width: 49%;
-    height: fit-content;
-  }
-  footer form button {
-    width: 100%;
-    max-width: none;
-    margin-top: 0;
-    margin-left: 0;
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 73px;
   }
 }
 
@@ -555,6 +588,21 @@
   .btn_container .discord {
     scale: 0.8;
   }
+  .assests .objects:first-child {
+    right: 130px;
+    bottom: 25%;
+    position: absolute;
+  }
+  .assests .objects:last-child {
+    left: 60%;
+    top: 70px;
+    position: absolute;
+  }
+  .assests .objects:nth-child(2) {
+    right: 30%;
+    bottom: 50px;
+    position: absolute;
+  }
   footer {
     grid-template-columns: 65% 1fr;
   }
@@ -567,11 +615,14 @@
     width: 49%;
     height: fit-content;
   }
-  footer form button {
+  footer form .button {
     width: 100%;
     max-width: none;
     margin-top: 0;
     margin-left: 0;
+  }
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 76px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1349px) {
@@ -586,11 +637,24 @@
   .btn_container .discord {
     scale: 0.9;
   }
+  .assests .objects:last-child {
+    left: 40%;
+    top: 70px;
+    position: absolute;
+  }
+  .assests .objects:nth-child(2) {
+    right: 50%;
+    bottom: 50px;
+    position: absolute;
+  }
   #storyLine .text-container .text-wrapper {
     padding: 0;
   }
   #storyLine .text-container h1 {
     margin-bottom: 10px;
+  }
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 85px;
   }
 }
 @media (min-width: 1350px) and (max-width: 1499px) {
@@ -605,8 +669,21 @@
   .btn_container .discord {
     scale: 0.9;
   }
+  .assests .objects:last-child {
+    left: 40%;
+    top: 70px;
+    position: absolute;
+  }
+  .assests .objects:nth-child(2) {
+    right: 50%;
+    bottom: 50px;
+    position: absolute;
+  }
   #storyLine .text-container .text-wrapper {
     padding: 14px;
+  }
+  footer .bottom-links-and_downloads .download_buttons img {
+    height: 95px;
   }
 }
 @media (min-width: 1500px) and (max-width: 1649px) {
@@ -618,10 +695,30 @@
     grid-template-rows: 40% 60%;
     min-width: 906px;
   }
+  header .btn_container {
+    bottom: -60%;
+  }
+  #game-story .imgOne + .imgTwo {
+    margin-top: auto !important;
+    height: 95% !important;
+  }
+  #game-story .imgThree + .imgFour {
+    margin-bottom: auto !important;
+    height: 95% !important;
+  }
 }
 @media (min-width: 1650px) and (max-width: 1799px) {
   footer {
     grid-template-columns: 1026px 1fr;
+  }
+  #game-story .imgOne + .imgTwo {
+    margin-top: auto !important;
+    height: 95% !important;
+  }
+  #game-story .imgThree,
+  #game-story .imgFour {
+    margin-bottom: auto !important;
+    height: 95% !important;
   }
 }
 @media (min-width: 1800px) and (max-width: 1950px) {

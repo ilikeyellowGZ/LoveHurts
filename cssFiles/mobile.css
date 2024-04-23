@@ -1,7 +1,6 @@
 @media (max-width: 600px) {
   header * {
     z-index: 2;
-    border: 1px solid green;
   }
   header {
     height: 100dvh;
@@ -12,7 +11,7 @@
     overflow-y: hidden;
   }
   nav {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 6vh;
     inset: 0;
@@ -32,9 +31,7 @@
     width: 55px;
     height: 55px;
   }
-  .non-mobile-links_and-hamburger .hamburger {
-    display: none;
-  }
+
   .non-mobile-links_and-hamburger #closingBtn {
     position: absolute;
     right: 14px;
@@ -57,13 +54,12 @@
     height: 100vh;
     background: var(--light-blue);
     grid-template-rows: 1fr 1fr;
-    z-index: 3;
+    z-index: 9;
     max-width: 100vw;
-    position: absolute;
+    position: fixed;
     inset: 0;
-    display: block;
-    z-index: 1000;
     padding-top: 2vh;
+    transition: 0.4s;
   }
 
   #mobile-nav_view #closingBtn svg {
@@ -84,15 +80,22 @@
   }
   #mobile-nav_view .mobile-nav_links ul li {
     list-style: none;
-    margin: 30px 0;
+    padding: 30px 0;
     text-align: center;
     font-family: var(--heading-font);
     font-size: 30px;
     text-transform: uppercase;
+    border-top: 1px solid red;
+    width: 100%;
+  }
+  #mobile-nav_view .mobile-nav_links ul li:last-child {
+    border-bottom: 1px solid red;
   }
   #mobile-nav_view .mobile-nav_links ul li a {
     text-decoration: none;
     color: var(--red);
+    letter-spacing: 1px;
+    transform: scaleX(1.1);
   }
 
   .mobile-downloads_container {
@@ -102,6 +105,10 @@
     justify-content: center;
     align-items: center;
     grid-template-columns: 50% 50%;
+  }
+  .mobile-downloads_container button {
+    border: none;
+    background: transparent;
   }
   .mobile-downloads_container img {
     aspect-ratio: 3.32 / 1;
@@ -133,7 +140,7 @@
     color: red;
     position: relative;
     transition: 0.4s;
-    font-family: var(--general-font);
+    font-family: var(--links-font);
   }
   .gameLogo {
     width: 100%;
@@ -213,14 +220,24 @@
   }
   #the_creation .text_container {
     margin: auto;
+    padding: 12px 8px;
   }
   .text_container h1 {
     font-size: 50px;
     text-align: center;
   }
-  .text_container p {
-    font-size: 18px;
-    text-align: center;
+  .text_container div {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .text_container .paragraph-text_creation div span:first-child {
+    flex-grow: 1;
+    display: flex;
+    min-width: 60px;
+    max-width: 60px;
+    font-weight: 600;
+    place-items: center;
   }
   .assests .objects:first-child {
     right: 23%;
@@ -286,7 +303,7 @@
     text-align: center;
   }
   #game-story img {
-    height: 48%;
+    height: 48% !important;
     aspect-ratio: 16/9 !important;
   }
 
@@ -365,15 +382,16 @@
     grid-template-rows: 66% 1fr;
     grid-template-columns: none;
     padding: 12px;
+    height: 100vh;
   }
   footer form {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
-    background: green;
-  }
-  footer form input {
-    text-align: center;
+    background: var(--dark-blue);
+    border: none;
+    height: 100%;
+    outline: none;
   }
   footer .bottom-links-and_downloads {
     display: grid;
@@ -399,6 +417,23 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
+  }
+
+  .bottom-links-and_downloads .links ul li {
+    text-align: start;
+    margin: 10px 0;
+  }
+  .bottom-links-and_downloads .links ul li a {
+    padding: 12px;
+    text-decoration: none;
+    color: var(--light-page-color);
+    font-size: 13.5px;
+    color: #fff;
+    position: relative;
+    transition: 0.4s;
+    text-transform: capitalize;
+    font-family: var(--links-font);
   }
   footer .form_logo-container {
     grid-template-columns: 100%;
@@ -412,21 +447,50 @@
   footer form input {
     width: 100%;
     max-width: none;
+    text-align: center;
   }
-  footer form button {
+  .button {
     width: 100%;
     max-width: none;
     margin-top: 0;
     margin-left: 0;
     height: 60px;
   }
+  .button svg {
+    display: none;
+  }
+  #letsStayConnected h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  #letsStayConnected p {
+    text-align: center;
+    font-size: 18px;
+  }
   footer .form-container p {
     padding: 0;
     text-align: center;
   }
   footer .form-container {
-    grid-template-rows: 30% 70%;
     height: 100%;
     padding: 0;
+    grid-template-rows: 40% 60%;
   }
+
+  .center {
+    animation: center 0.3s cubic-bezier(0, 1.11, 1, 1);
+  }
+
+  @keyframes center {
+    0% {
+      transform: translateX(1000px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+.remove {
+  display: none;
 }

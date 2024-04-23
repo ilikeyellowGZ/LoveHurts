@@ -1,0 +1,25 @@
+.text_container .paragraph-text_creation div {
+  display: flex;
+}
+
+.assests .objects:last-child {
+  left: 40%;
+  top: 100px;
+  position: absolute;
+}
+.assests .objects:nth-child(3) {
+  right: 10%;
+  top: 190px;
+  position: absolute;
+}
+
+.assests .objects:nth-child(2) {
+  right: 35%;
+  bottom: 90px;
+  position: absolute;
+}
+.assests .objects:first-child {
+  right: 200px;
+  bottom: 25%;
+  position: absolute;
+}

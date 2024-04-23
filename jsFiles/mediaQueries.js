@@ -1,4 +1,3 @@
-const mobileNavView = document.getElementById("mobile-nav_view");
 const gameStory = document.getElementById("game-story");
 
 function checkAndResize() {
@@ -17,8 +16,13 @@ function checkAndResize() {
   var currentWidth = window.innerWidth;
   var currentHeight = window.innerHeight;
 
-  if (currentHeight <= 700 && currentWidth >= 350 && currentWidth <= 500) {
-    mobileNavView.style.background = "black";
+  if (
+    (currentHeight <= 700 && currentWidth >= 350 && currentWidth <= 500) ||
+    (currentHeight >= 720 &&
+      currentHeight <= 740 &&
+      currentWidth >= 350 &&
+      currentWidth <= 370)
+  ) {
     imgArtist.style.scale = "0.6";
     imgArtist.style.top = "80%";
     imgArtist.style.right = "10%";
@@ -41,7 +45,6 @@ function checkAndResize() {
     textContainer.style.padding = "0";
     textContainer.style.width = "100%";
   } else {
-    mobileNavView.style.background = "";
     imgArtist.style.scale = "";
     imgArtist.style.top = "";
     imgArtist.style.right = "";
@@ -65,6 +68,7 @@ function checkAndResize() {
     textContainer.style.width = "";
   }
 }
+
 window.onload = function () {
   checkAndResize();
 };
