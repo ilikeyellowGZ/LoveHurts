@@ -183,6 +183,7 @@ section {
   z-index: 5;
   min-height: fit-content;
   width: max-content;
+  background: var(--dark-gray);
 }
 .text_container h1 {
   font-family: var(--heading-font);
@@ -331,6 +332,7 @@ section {
   align-items: center;
   box-shadow: 1px 0px 39px -4px rgba(0, 0, 0, 0.52);
   border-radius: 24px;
+  background: var(--dark-gray);
 }
 #storyLine .text-container .text-wrapper {
   height: 100%;
@@ -359,54 +361,7 @@ section {
   inset: 0;
   pointer-events: none;
 }
-#storyLine .assets .objects {
-  height: 120px;
-  aspect-ratio: 1;
-  position: absolute;
-}
-#storyLine .assets .objects img {
-  scale: 2.3;
-  position: absolute;
-  left: 70%;
-  top: 30%;
-  transform: translateX(-50%);
-}
-#storyLine .assets .objects:first-child {
-  left: 30%;
-  top: 12%;
-}
-#storyLine .assets .objects:nth-child(2) {
-  left: 12%;
-  top: 45%;
-}
-#storyLine .assets .objects:nth-child(3) {
-  right: 12%;
-  top: 45%;
-}
-#storyLine .assets .objects:nth-child(4) {
-  left: 20%;
-  top: 74%;
-}
-#storyLine .assets .objects:nth-child(5) {
-  left: 47%;
-  top: 77%;
-}
-#storyLine .assets .objects:nth-child(6) {
-  right: 20%;
-  top: 75%;
-}
-#storyLine .assets .objects:nth-child(7) {
-  right: 30%;
-  top: 12%;
-}
-#storyLine .assets .objects:nth-child(8) {
-  left: 10%;
-  top: 18%;
-}
-#storyLine .assets .objects:nth-child(9) {
-  right: 10%;
-  top: 18%;
-}
+
 /* -------------footer */
 
 footer {

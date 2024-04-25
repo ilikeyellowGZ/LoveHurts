@@ -1,25 +1,228 @@
 .text_container .paragraph-text_creation div {
   display: flex;
 }
-
+.assests .objects {
+  cursor: pointer;
+}
 .assests .objects:last-child {
   left: 40%;
-  top: 100px;
+  top: 300px;
   position: absolute;
 }
 .assests .objects:nth-child(3) {
-  right: 10%;
-  top: 190px;
+  right: 60%;
+  top: 290px;
   position: absolute;
 }
 
 .assests .objects:nth-child(2) {
-  right: 35%;
-  bottom: 90px;
+  right: 65%;
+  bottom: 400px;
   position: absolute;
 }
 .assests .objects:first-child {
-  right: 200px;
-  bottom: 25%;
+  right: 1000px;
+  bottom: 35%;
   position: absolute;
+}
+.assests .objects:first-child:hover {
+  animation: firstCharacterSelection 0.5s infinite ease-out;
+}
+.assests .show:nth-child(2):hover {
+  animation: secondCharacterSelection 0.5s infinite ease-out;
+}
+.assests .show:nth-child(3):hover {
+  animation: thirdCharacterSelection 0.5s infinite ease-out;
+}
+.assests .show:last-child:hover {
+  animation: fourthCharacterSelection 0.5s infinite ease-out;
+}
+
+.assests .show:first-child {
+  transform: translate(750px, 100px);
+  transition: transform 1s ease-in;
+  transition: opacity 0.2s linear;
+}
+.assests .show:nth-child(2) {
+  transform: translate(300px, 350px);
+  transition: transform 1s ease-in;
+  transition: opacity 0.2s linear;
+}
+.assests .show:nth-child(3) {
+  transform: translate(800px, -100px);
+  transition: transform 1s ease-in;
+  transition: opacity 0.2s linear;
+}
+.assests .show:last-child {
+  transform: translate(30%, -250px);
+  transition: transform 1s ease-in;
+  transition: opacity 0.2s linear;
+}
+
+#storyLine .assets .objects {
+  height: 120px;
+  aspect-ratio: 1;
+  position: absolute;
+}
+#storyLine .assets .objects img {
+  scale: 2.3;
+  position: absolute;
+  left: 70%;
+  top: 30%;
+  transform: translateX(-50%);
+  backdrop-filter: brightness(-5px);
+}
+#storyLine .assets .objects:first-child {
+  left: 50%;
+  top: 40%;
+}
+
+#storyLine .show .objects:first-child {
+  left: 50%;
+  top: 40%;
+}
+#storyLine .assets .objects:nth-child(2) {
+  left: 50%;
+  top: 40%;
+}
+#storyLine .assets .objects:nth-child(3) {
+  right: 50%;
+  top: 40%;
+}
+#storyLine .assets .objects:nth-child(4) {
+  left: 50%;
+  top: 40%;
+}
+#storyLine .assets .objects:nth-child(5) {
+  left: 50%;
+  top: 40%;
+}
+#storyLine .assets .objects:nth-child(6) {
+  right: 50%;
+  top: 40%;
+}
+#storyLine .assets .objects:nth-child(7) {
+  right: 50%;
+  top: 40%;
+}
+#storyLine .assets .objects:nth-child(8) {
+  left: 50%;
+  top: 40%;
+}
+#storyLine .assets .objects:nth-child(9) {
+  right: 50%;
+  top: 40%;
+}
+
+#storyLine .assets .show:first-child {
+  transform: translate(300px, -300px);
+  transition: all 1s ease-out;
+}
+#storyLine .assets .show:nth-child(2) {
+  transform: translate(600px, -200px);
+  transition: all 1s ease-out;
+}
+#storyLine .assets .show:nth-child(3) {
+  transform: translate(800px, 40px);
+  transition: all 1s ease-out;
+}
+#storyLine .assets .show:nth-child(4) {
+  transform: translate(600px, 300px);
+  transition: all 1s ease-out;
+}
+#storyLine .assets .show:nth-child(5) {
+  transform: translate(10px, 400px);
+  transition: all 1s ease-out;
+}
+#storyLine .assets .show:nth-child(6) {
+  transform: translate(0px, -300px);
+  transition: all 1s ease-out;
+}
+#storyLine .assets .show:nth-child(7) {
+  transform: translate(-500px, 350px);
+  transition: all 1s ease-out;
+}
+#storyLine .assets .show:nth-child(8) {
+  transform: translate(-800px, 40px);
+  transition: all 1s ease-out;
+}
+#storyLine .assets .show:nth-child(9) {
+  transform: translate(-500px, -250px);
+  transition: all 1s ease-out;
+}
+
+@keyframes firstCharacterSelection {
+  form {
+    transform: translate(750px, 100px);
+  }
+  50% {
+    transform: translate(750px, 90px);
+  }
+  to {
+    ransform: translate(750px, 100px);
+  }
+}
+@keyframes secondCharacterSelection {
+  form {
+    transform: translate(300px, 350px);
+  }
+  50% {
+    transform: translate(300px, 340px);
+  }
+  to {
+    transform: translate(300px, 350px);
+  }
+}
+@keyframes thirdCharacterSelection {
+  form {
+    transform: translate(800px, -100px);
+  }
+  50% {
+    transform: translate(800px, -90px);
+  }
+  to {
+    transform: translate(800px, -100px);
+  }
+}
+@keyframes fourthCharacterSelection {
+  form {
+    transform: translate(30%, -250px);
+  }
+  50% {
+    transform: translate(30%, -260px);
+  }
+  to {
+    transform: translate(30%, -250px);
+  }
+}
+
+@keyframes CharacterSelection {
+  form {
+    transform: translate(0px, 00px);
+  }
+  50% {
+    transform: translate(0px, -10px);
+  }
+  to {
+    transform: translate(0px, -00px);
+  }
+}
+
+/* -------------------------------------------------------------- */
+
+.startHannahMove {
+  animation: secondCharacterSelection 0.5s infinite ease-out;
+}
+.startArtistMove {
+  animation: firstCharacterSelection 0.5s infinite ease-out;
+}
+.startMusicianMove {
+  animation: fourthCharacterSelection 0.5s infinite ease-out;
+}
+.startCoderMove {
+  animation: thirdCharacterSelection 0.5s infinite ease-out;
+}
+
+.dimImg {
+  opacity: 0.7;
 }
