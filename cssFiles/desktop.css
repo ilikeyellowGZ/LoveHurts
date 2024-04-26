@@ -68,6 +68,12 @@ nav {
   text-decoration: none;
   text-transform: capitalize;
   font-family: var(--links-font);
+  transition: 0.3s;
+  padding-bottom: 4px;
+}
+.non-mobile-links_and-hamburger ul li a:hover {
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
 }
 
 .gameLogo {

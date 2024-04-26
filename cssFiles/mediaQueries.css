@@ -983,13 +983,13 @@
     transform: translate(200px, -200px) !important;
   }
   #storyLine .assets .show:nth-child(2) {
-    transform: translate(500px, -100px) !important;
+    transform: translate(500px, -180px) !important;
   }
   #storyLine .assets .show:nth-child(3) {
-    transform: translate(740px, 10px) !important;
+    transform: translate(650px, 10px) !important;
   }
   #storyLine .assets .show:nth-child(4) {
-    transform: translate(540px, 240px) !important;
+    transform: translate(440px, 240px) !important;
   }
   #storyLine .assets .show:nth-child(5) {
     transform: translate(-20px, 340px) !important;
@@ -1001,7 +1001,7 @@
     transform: translate(-440px, 320px) !important;
   }
   #storyLine .assets .show:nth-child(8) {
-    transform: translate(-750px, 0px) !important;
+    transform: translate(-620px, 120px) !important;
   }
   #storyLine .assets .show:nth-child(9) {
     transform: translate(-420px, -170px) !important;
@@ -1034,7 +1034,7 @@
     transform: translate(560px, -170px) !important;
   }
   #storyLine .assets .show:nth-child(3) {
-    transform: translate(770px, 10px) !important;
+    transform: translate(730px, 10px) !important;
   }
   #storyLine .assets .show:nth-child(4) {
     transform: translate(570px, 270px) !important;
@@ -1049,7 +1049,7 @@
     transform: translate(-470px, 350px) !important;
   }
   #storyLine .assets .show:nth-child(8) {
-    transform: translate(-780px, 20px) !important;
+    transform: translate(-730px, 20px) !important;
   }
   #storyLine .assets .show:nth-child(9) {
     transform: translate(-450px, -200px) !important;
