@@ -1,6 +1,5 @@
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     }
@@ -27,6 +26,7 @@ hannahText.addEventListener("mouseover", () => {
   musicianText.classList.add("dimImg");
   coderImg.classList.add("dimImg");
   coderText.classList.add("dimImg");
+  hannahText.classList.add("addFontWeight");
 });
 
 hannahText.addEventListener("mouseout", () => {
@@ -37,6 +37,7 @@ hannahText.addEventListener("mouseout", () => {
   musicianText.classList.remove("dimImg");
   coderImg.classList.remove("dimImg");
   coderText.classList.remove("dimImg");
+  hannahText.classList.remove("addFontWeight");
 });
 /* ---------------------------------- */
 ArtistText.addEventListener("mouseover", () => {
@@ -47,6 +48,7 @@ ArtistText.addEventListener("mouseover", () => {
   musicianText.classList.add("dimImg");
   coderImg.classList.add("dimImg");
   coderText.classList.add("dimImg");
+  ArtistText.classList.add("addFontWeight");
 });
 
 ArtistText.addEventListener("mouseout", () => {
@@ -57,6 +59,7 @@ ArtistText.addEventListener("mouseout", () => {
   musicianText.classList.remove("dimImg");
   coderImg.classList.remove("dimImg");
   coderText.classList.remove("dimImg");
+  ArtistText.classList.remove("addFontWeight");
 });
 
 /* ------------------------------ */
@@ -69,6 +72,7 @@ musicianText.addEventListener("mouseover", () => {
   ArtistText.classList.add("dimImg");
   coderImg.classList.add("dimImg");
   coderText.classList.add("dimImg");
+  musicianText.classList.add("addFontWeight");
 });
 
 musicianText.addEventListener("mouseout", () => {
@@ -79,6 +83,7 @@ musicianText.addEventListener("mouseout", () => {
   ArtistImg.classList.remove("dimImg");
   coderImg.classList.remove("dimImg");
   coderText.classList.remove("dimImg");
+  musicianText.classList.remove("addFontWeight");
 });
 
 /* ---------------------------------startCoderMove */
@@ -91,6 +96,7 @@ coderText.addEventListener("mouseover", () => {
   ArtistText.classList.add("dimImg");
   musicianImg.classList.add("dimImg");
   musicianText.classList.add("dimImg");
+  coderText.classList.add("addFontWeight");
 });
 
 coderText.addEventListener("mouseout", () => {
@@ -101,4 +107,5 @@ coderText.addEventListener("mouseout", () => {
   ArtistImg.classList.remove("dimImg");
   musicianImg.classList.remove("dimImg");
   musicianText.classList.remove("dimImg");
+  coderText.classList.remove("addFontWeight");
 });

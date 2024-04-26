@@ -46,6 +46,7 @@
     z-index: 10;
     position: relative;
     display: block;
+    cursor: pointer;
   }
   .non-mobile-links_and-hamburger ul {
     display: none;
@@ -85,11 +86,11 @@
     font-family: var(--heading-font);
     font-size: 30px;
     text-transform: uppercase;
-    border-top: 1px solid red;
+    border-top: 2px solid var(--yellow);
     width: 100%;
   }
   #mobile-nav_view .mobile-nav_links ul li:last-child {
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid var(--yellow);
   }
   #mobile-nav_view .mobile-nav_links ul li a {
     text-decoration: none;
@@ -114,6 +115,11 @@
     aspect-ratio: 3.32 / 1;
     height: 60px;
     justify-self: center;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .mobile-downloads_container img:hover {
+    scale: 1.02;
   }
   .mobile-downloads_container img:last-child {
     border-radius: 6px;
@@ -137,7 +143,7 @@
     text-decoration: none;
     color: var(--light-page-color);
     font-size: 18px;
-    color: red;
+    color: var(--red);
     position: relative;
     transition: 0.4s;
     font-family: var(--links-font);
@@ -240,23 +246,31 @@
     place-items: center;
   }
   .assests .objects:first-child {
-    right: 23%;
-    bottom: 8%;
+    right: 23% !important;
+    bottom: 8% !important;
+    transform: none !important;
+    transition: none !important;
   }
   .assests .objects:nth-child(2) {
-    left: 12%;
-    bottom: 8%;
+    left: 12% !important;
+    bottom: 8% !important;
+    transform: none !important;
+    transition: none !important;
   }
   .assests .objects:nth-child(3) {
-    right: 23%;
-    top: 12%;
+    right: 23% !important;
+    top: 12% !important;
+    transition: none !important;
+    transform: none !important;
   }
   .assests .objects:last-child {
-    left: 12%;
-    top: 12%;
+    left: 12% !important;
+    top: 12% !important;
+    transform: none !important;
+    transition: none !important;
   }
   .assests .objects img {
-    scale: 0.8;
+    scale: 0.8 !important;
   }
   .assests .objects:nth-child(3) img {
     transform: scaleX(1) !important;
@@ -334,48 +348,56 @@
     font-size: 16px;
   }
   #storyLine .assets .objects img {
-    scale: 1;
+    scale: 1 !important;
     position: absolute;
     left: 70%;
     top: 30%;
     transform: translateX(-80%);
   }
   #storyLine .assets .objects:first-child {
-    left: 20%;
-    top: 20%;
+    left: 20% !important;
+    top: 20% !important;
+    transform: none !important;
   }
   #storyLine .assets .objects:nth-child(2) {
-    left: 12%;
-    top: 77%;
+    left: 12% !important;
+    top: 77% !important;
     display: none;
   }
   #storyLine .assets .objects:nth-child(3) {
-    right: 12%;
-    top: 77%;
+    right: 12% !important;
+    top: 77% !important;
+    transform: none !important;
   }
   #storyLine .assets .objects:nth-child(4) {
-    left: 0%;
-    top: 70%;
+    left: 0% !important;
+    top: 70% !important;
+    transform: none !important;
   }
   #storyLine .assets .objects:nth-child(5) {
-    left: 12%;
-    top: 77%;
+    left: 12% !important;
+    top: 77% !important;
+    transform: none !important;
   }
   #storyLine .assets .objects:nth-child(6) {
-    right: 0%;
-    top: 70%;
+    right: 0% !important;
+    top: 70% !important;
+    transform: none !important;
   }
   #storyLine .assets .objects:nth-child(7) {
-    right: 30%;
-    top: 20%;
+    right: 30% !important;
+    transform: none !important;
+    top: 20% !important;
   }
   #storyLine .assets .objects:nth-child(8) {
-    left: 0%;
-    top: 8%;
+    left: 0% !important;
+    top: 8% !important;
+    transform: none !important;
   }
   #storyLine .assets .objects:nth-child(9) {
-    right: 0%;
-    top: 8%;
+    right: 0% !important;
+    top: 8% !important;
+    transform: none !important;
   }
 
   footer {

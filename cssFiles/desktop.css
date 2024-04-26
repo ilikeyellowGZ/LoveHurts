@@ -283,6 +283,7 @@ section {
 }
 #game-story .text-container .text-wrapper {
   place-content: center;
+  height: 100%;
 }
 #game-story .img-container {
   display: flex;
@@ -515,9 +516,19 @@ footer .bottom-links-and_downloads .download_buttons img {
 }
 footer .bottom-links-and_downloads .download_buttons .itch_io img {
   border-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
 }
 footer .bottom-links-and_downloads .download_buttons .google_play img {
+  cursor: pointer;
   margin-top: 70px;
+  transition: 0.4s;
+}
+footer .bottom-links-and_downloads .download_buttons .google_play img:hover {
+  scale: 1.02;
+}
+footer .bottom-links-and_downloads .download_buttons .itch_io img:hover {
+  scale: 1.02;
 }
 footer .google_play,
 footer .itch_io {

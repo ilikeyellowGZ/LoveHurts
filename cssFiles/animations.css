@@ -1,5 +1,6 @@
 .text_container .paragraph-text_creation div {
   display: flex;
+  cursor: default;
 }
 .assests .objects {
   cursor: pointer;
@@ -26,37 +27,35 @@
   position: absolute;
 }
 .assests .objects:first-child:hover {
-  animation: firstCharacterSelection 0.5s infinite ease-out;
+  animation: firstCharacterSelection 0.5s infinite ease-out forwards;
 }
 .assests .show:nth-child(2):hover {
-  animation: secondCharacterSelection 0.5s infinite ease-out;
+  animation: secondCharacterSelection 0.5s infinite
+    cubic-bezier(0.75, 0.76, 0, 1.14) forwards;
 }
 .assests .show:nth-child(3):hover {
-  animation: thirdCharacterSelection 0.5s infinite ease-out;
+  animation: thirdCharacterSelection 0.5s infinite ease-out forwards;
 }
 .assests .show:last-child:hover {
-  animation: fourthCharacterSelection 0.5s infinite ease-out;
+  animation: fourthCharacterSelection 0.5s infinite
+    cubic-bezier(0.75, 0.76, 0, 1.14) forwards;
 }
 
 .assests .show:first-child {
   transform: translate(750px, 100px);
-  transition: transform 1s ease-in;
-  transition: opacity 0.2s linear;
+  transition: transform 1s ease-in, opacity 0.2s linear;
 }
 .assests .show:nth-child(2) {
   transform: translate(300px, 350px);
-  transition: transform 1s ease-in;
-  transition: opacity 0.2s linear;
+  transition: transform 1s ease-out, opacity 0.2s linear;
 }
 .assests .show:nth-child(3) {
   transform: translate(800px, -100px);
-  transition: transform 1s ease-in;
-  transition: opacity 0.2s linear;
+  transition: transform 1s ease-out, opacity 0.2s linear;
 }
 .assests .show:last-child {
   transform: translate(30%, -250px);
-  transition: transform 1s ease-in;
-  transition: opacity 0.2s linear;
+  transition: transform 1s ease-out, opacity 0.2s linear;
 }
 
 #storyLine .assets .objects {
@@ -225,4 +224,7 @@
 
 .dimImg {
   opacity: 0.7;
+}
+.addFontWeight {
+  font-weight: 600;
 }
