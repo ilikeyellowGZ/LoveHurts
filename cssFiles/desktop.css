@@ -135,6 +135,10 @@ header .btn_container {
   height: 100%;
   pointer-events: none;
 }
+.btn_container .google-play,
+footer .bottom-links-and_downloads .download_buttons .google_play img {
+  pointer-events: none;
+}
 .btn_container .discord {
   align-items: center;
   transition: 0.3s;
@@ -256,7 +260,7 @@ section {
   position: absolute;
 }
 .assests .objects:nth-child(3) img {
-  aspect-ratio: 0.895/ 1 !important;
+  aspect-ratio: 1/0.895 !important;
 }
 .assests .objects:last-child {
   left: 40%;

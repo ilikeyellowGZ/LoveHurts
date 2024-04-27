@@ -323,7 +323,6 @@
 
   /* --------------StoryLine-------------- */
   #storyLine {
-    background: var(--blue);
     position: relative;
     padding: 24px 12px;
     display: flex;
