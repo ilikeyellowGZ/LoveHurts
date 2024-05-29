@@ -1,0 +1,25 @@
+{
+  "name": "lovehurts",
+  "version": "1.0.0",
+  "description": "LoveHurts a game made by GamerGoon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilikeyellowGZ/LoveHurts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilikeyellowGZ/LoveHurts/issues"
+  },
+  "homepage": "https://github.com/ilikeyellowGZ/LoveHurts#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "nodemon": "^3.1.2"
+  }
+}
