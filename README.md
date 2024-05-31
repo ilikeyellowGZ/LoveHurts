@@ -12,3 +12,4 @@ you finally work, so lemme just commit this now and now i just gotta netlify api
 testing dotenv to see if it works in deployment
 
 fixed the not displaying issue/ the .env problem regarding secruity
+testing if i say we redirect back to the index page in the public k folder

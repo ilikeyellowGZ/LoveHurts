@@ -43,7 +43,7 @@ app.post("/", function (req, res) {
     email: req.body.email,
   });
   newUser.save();
-  res.redirect("/");
+  res.redirect("/public/index.html");
 });
 
 // Use the port from the environment variables or default to 5000
