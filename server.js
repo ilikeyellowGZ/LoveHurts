@@ -7,6 +7,9 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const app = express();
+console.log(process.env.TEST_VARIABLE)
+console.log(process.env.MONGODB_URI)
+console.log(process.env.PORT)
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
