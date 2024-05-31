@@ -31,7 +31,7 @@ app.post("/", function (req, res) {
     email: req.body.email,
   });
   newUser.save();
-  res.redirect("/");
+  res.redirect("/public/index.html");
 });
 
 app.listen(5000, function () {
