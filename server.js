@@ -1,13 +1,25 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const bodyParser = require("body-parser")
+const bodyParser = require("body-parser");
+const dotenv = require("dotenv");
+
+// Load environment variables from .env file
+dotenv.config();
 
 const app = express();
 
+console.log(process.env.MONGODB_URI)
+console.log(process.env.PORT)
+console.log(process.env.TEST_VARIABLE)
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Use the MongoDB connection string from the environment variables
 mongoose.connect(
-  "mongodb+srv://GamerGoon:Ecq9M3lurLWX3GIW@lovehurts.hht8zz3.mongodb.net/?retryWrites=true&w=majority&appName=firstTimeUse"
+  process.env.MONGODB_URI,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  }
 );
 
 // Serve static files from the "public" directory
@@ -31,9 +43,11 @@ app.post("/", function (req, res) {
     email: req.body.email,
   });
   newUser.save();
-  res.redirect("/public/index.html");
+  res.redirect("/");
 });
 
-app.listen(5000, function () {
-  console.log("Site running on 3000");
+// Use the port from the environment variables or default to 5000
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, function () {
+  console.log(`Site running on port ${PORT}`);
 });
