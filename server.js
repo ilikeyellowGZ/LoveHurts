@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 mongoose.connect(
-  "mongodb+srv://testDB:testDBPassword@firsttimeuse.ldsmgsr.mongodb.net/?retryWrites=true&w=majority&appName=firstTimeUse"
+  "mongodb+srv://GamerGoon:Ecq9M3lurLWX3GIW@lovehurts.hht8zz3.mongodb.net/?retryWrites=true&w=majority&appName=firstTimeUse"
 );
 
 // Serve static files from the "public" directory
